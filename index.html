@@ -1,0 +1,1976 @@
+<!DOCTYPE html>
+<html lang="th" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KVN PLUS | บริษัท เค.วี.เอ็น พลัส จำกัด - คิดครบ สร้างจบ ด้วยมาตรฐานวิศวกรรม</title>
+  
+  <!-- Google Fonts: Cinzel (Luxury Display) + Prompt (Modern Header) + Sarabun (Formal Body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;800;900&family=Prompt:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Sarabun:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome 6 Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            display: ['Cinzel', 'serif'],
+            heading: ['Prompt', 'sans-serif'],
+            sans: ['Sarabun', 'sans-serif'],
+          },
+          colors: {
+            brand: {
+              gold: '#b68b40',
+              goldLight: '#d5b376',
+              goldDark: '#8a6524',
+              goldChampagne: '#f8f4eb',
+              goldBorder: 'rgba(182, 139, 64, 0.25)',
+              cream: '#faf8f5',
+              surface: '#ffffff',
+              dark: '#141821',
+              slate: '#334155',
+              line: '#06C755'
+            }
+          },
+          boxShadow: {
+            'luxury': '0 20px 40px -15px rgba(182, 139, 64, 0.12), 0 0 25px 0 rgba(0,0,0,0.04)',
+            'card': '0 10px 30px -5px rgba(0, 0, 0, 0.05), 0 0 0 1px rgba(182, 139, 64, 0.18)',
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body {
+      background: url('bg.png') no-repeat center center fixed;
+      background-size: cover;
+      background-color: #f7f4ee;
+    }
+    .page-view { display: none; }
+    .page-view.active { display: block; animation: fadeIn 0.4s cubic-bezier(0.16, 1, 0.3, 1); }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(12px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .crisp-img {
+      image-rendering: -webkit-optimize-contrast;
+      image-rendering: crisp-edges;
+    }
+    .hero-slide {
+      opacity: 0;
+      transition: opacity 1.2s ease-in-out, transform 7s ease-out;
+      transform: scale(1);
+    }
+    .hero-slide.active {
+      opacity: 1;
+      transform: scale(1.05);
+    }
+    .glass-card {
+      background: rgba(255, 255, 255, 0.88);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      border: 1px solid rgba(182, 139, 64, 0.22);
+    }
+    .glass-card-hover {
+      transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .glass-card-hover:hover {
+      transform: translateY(-4px);
+      border-color: rgba(182, 139, 64, 0.55);
+      box-shadow: 0 16px 32px -8px rgba(182, 139, 64, 0.2);
+    }
+    .watermark-text {
+      font-family: 'Cinzel', serif;
+      letter-spacing: 0.18em;
+      -webkit-text-stroke: 1px rgba(182, 139, 64, 0.28);
+      color: transparent;
+    }
+    /* Hide scrollbar for gallery thumbnails */
+    .no-scrollbar::-webkit-scrollbar { display: none; }
+    .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+  </style>
+</head>
+<body class="font-sans text-brand-slate antialiased selection:bg-brand-gold selection:text-white py-0 sm:py-6 px-0 sm:px-4 md:px-8 min-h-screen flex flex-col justify-between">
+
+  <!-- ================= LUXURY OUTER FRAME ================= -->
+  <div class="max-w-[1420px] w-full mx-auto bg-white/92 backdrop-blur-xl rounded-none sm:rounded-[2.8rem] shadow-[0_25px_70px_rgba(0,0,0,0.15)] border border-brand-gold/30 overflow-hidden flex flex-col min-h-screen">
+
+    <!-- ================= TOP BAR ================= -->
+    <div class="bg-gradient-to-r from-[#171c26] via-[#212836] to-[#171c26] text-slate-300 text-xs py-2.5 px-6 border-b border-brand-gold/30 hidden md:block">
+      <div class="max-w-7xl mx-auto flex justify-between items-center">
+        <div class="flex items-center space-x-6">
+          <span class="flex items-center space-x-2 text-slate-300">
+            <i class="fa-solid fa-location-dot text-brand-gold"></i>
+            <span>ลำลูกกา ปทุมธานี 12150 (บริการทั่วประเทศ)</span>
+          </span>
+          <span class="flex items-center space-x-2 text-slate-300">
+            <i class="fa-solid fa-award text-brand-gold"></i>
+            <span>ประสบการณ์กว่า 25 ปี (ก่อตั้ง พ.ศ. 2544)</span>
+          </span>
+        </div>
+        <div class="flex items-center space-x-5">
+          <a href="tel:021010122" class="hover:text-brand-goldLight transition-colors flex items-center space-x-1.5">
+            <i class="fa-solid fa-phone text-brand-gold text-xs"></i>
+            <span>02-101-0122</span>
+          </a>
+          <a href="tel:0889874539" class="hover:text-brand-goldLight transition-colors flex items-center space-x-1.5 font-medium">
+            <i class="fa-solid fa-mobile-screen text-brand-gold text-xs"></i>
+            <span>088-987-4539 (คุณฝน)</span>
+          </a>
+          <a href="https://line.me/ti/p/-rOGw3Ouoj" target="_blank" class="hover:text-brand-line transition-colors flex items-center space-x-1">
+            <i class="fa-brands fa-line text-brand-line text-sm"></i>
+            <span>LINE Official</span>
+          </a>
+          <a href="https://www.facebook.com/profile.php?id=100054273157568" target="_blank" class="hover:text-brand-goldLight transition-colors flex items-center space-x-1">
+            <i class="fa-brands fa-facebook-f text-blue-400 text-xs"></i>
+            <span>เพจ บจ เค.วี.เอ็น</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- ================= FLOATING LUXURY NAVBAR ================= -->
+    <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-brand-gold/20 px-6 lg:px-12 py-4">
+      <div class="flex items-center justify-between">
+        
+        <!-- Logo -->
+        <a href="javascript:void(0)" onclick="navTo('home')" class="flex items-center space-x-3.5 group cursor-pointer">
+          <div class="w-12 h-12 rounded-2xl bg-gradient-to-br from-brand-gold to-brand-goldDark text-white flex items-center justify-center font-display font-black text-2xl shadow-md border border-amber-200/50 group-hover:scale-105 transition-transform duration-300">
+            K
+          </div>
+          <div>
+            <div class="font-display font-bold text-2xl tracking-[0.18em] text-brand-dark leading-none">
+              KVN<span class="text-brand-gold ml-1 font-black">PLUS</span>
+            </div>
+            <div class="text-[9px] uppercase tracking-[0.25em] text-brand-gold font-medium mt-1 font-heading">
+              Engineering &amp; Architecture
+            </div>
+          </div>
+        </a>
+
+        <!-- Desktop Capsule Nav Links -->
+        <nav class="hidden lg:flex items-center bg-[#f7f5f0] p-1.5 rounded-full border border-brand-gold/25 shadow-inner">
+          <button onclick="navTo('home')" class="nav-link text-xs font-heading font-medium px-5 py-2 rounded-full transition-all duration-300 bg-brand-gold text-white shadow-sm" data-target="home">หน้าหลัก</button>
+          <button onclick="navTo('services')" class="nav-link text-xs font-heading font-medium px-5 py-2 rounded-full transition-all duration-300 text-slate-700 hover:text-brand-gold" data-target="services">บริการของเรา</button>
+          <button onclick="navTo('projects')" class="nav-link text-xs font-heading font-medium px-5 py-2 rounded-full transition-all duration-300 text-slate-700 hover:text-brand-gold" data-target="projects">ผลงานโครงการ</button>
+          <button onclick="navTo('about')" class="nav-link text-xs font-heading font-medium px-5 py-2 rounded-full transition-all duration-300 text-slate-700 hover:text-brand-gold" data-target="about">เกี่ยวกับเรา</button>
+          <button onclick="navTo('contact')" class="nav-link text-xs font-heading font-medium px-5 py-2 rounded-full transition-all duration-300 text-slate-700 hover:text-brand-gold" data-target="contact">ติดต่อเรา</button>
+        </nav>
+
+        <!-- Right Consultation Pill Button -->
+        <div class="hidden lg:flex items-center space-x-3">
+          <button onclick="navTo('contact')" class="group flex items-center space-x-3 bg-brand-dark hover:bg-brand-gold text-white text-xs font-heading font-medium pl-5 pr-2 py-2 rounded-full shadow-md transition-all duration-300">
+            <span>ขอใบเสนอราคา (BOQ)</span>
+            <span class="w-7 h-7 rounded-full bg-white/20 group-hover:bg-white group-hover:text-brand-dark flex items-center justify-center transition-all duration-300">
+              <i class="fa-solid fa-arrow-right text-[10px]"></i>
+            </span>
+          </button>
+        </div>
+
+        <!-- Mobile Menu Toggle -->
+        <div class="lg:hidden flex items-center">
+          <button onclick="toggleMobileMenu()" class="text-brand-dark text-2xl p-2 focus:outline-none">
+            <i class="fa-solid fa-bars-staggered"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- Mobile Dropdown -->
+      <div id="mobile-menu" class="hidden lg:hidden bg-white/95 border border-brand-gold/20 rounded-2xl mt-4 px-6 py-4 space-y-3 shadow-xl">
+        <button onclick="navTo('home'); toggleMobileMenu()" class="block w-full text-left font-heading text-sm text-slate-800 hover:text-brand-gold py-1">หน้าหลัก</button>
+        <button onclick="navTo('services'); toggleMobileMenu()" class="block w-full text-left font-heading text-sm text-slate-800 hover:text-brand-gold py-1">บริการของเรา</button>
+        <button onclick="navTo('projects'); toggleMobileMenu()" class="block w-full text-left font-heading text-sm text-slate-800 hover:text-brand-gold py-1">ผลงานโครงการ</button>
+        <button onclick="navTo('about'); toggleMobileMenu()" class="block w-full text-left font-heading text-sm text-slate-800 hover:text-brand-gold py-1">เกี่ยวกับเรา</button>
+        <button onclick="navTo('contact'); toggleMobileMenu()" class="block w-full text-left font-heading text-sm text-slate-800 hover:text-brand-gold py-1">ติดต่อเรา</button>
+        <div class="pt-2">
+          <button onclick="navTo('contact'); toggleMobileMenu()" class="w-full bg-brand-gold text-white font-heading font-medium py-3 rounded-full text-center text-xs shadow-md">
+            ขอใบเสนอราคา / ปรึกษางานก่อสร้าง
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- ================= MAIN CONTENT VIEWS ================= -->
+    <main class="flex-grow p-4 sm:p-8 lg:p-10">
+
+      <!-- ================= 1. PAGE: HOME ================= -->
+      <section id="page-home" class="page-view active space-y-12">
+
+        <!-- HERO SECTION -->
+        <div class="relative rounded-[2.2rem] overflow-hidden bg-brand-dark min-h-[580px] lg:min-h-[660px] flex flex-col justify-between border border-brand-gold/40 shadow-2xl p-6 sm:p-12">
+          
+          <!-- Grand Architectural Watermark -->
+          <div class="absolute top-2 left-1/2 -translate-x-1/2 select-none pointer-events-none z-10 w-full text-center overflow-hidden">
+            <span class="watermark-text text-6xl sm:text-8xl md:text-9xl lg:text-[140px] font-black uppercase opacity-20 block tracking-widest leading-none">
+              KVN PLUS
+            </span>
+            <span class="text-[10px] sm:text-xs font-display tracking-[0.5em] text-brand-gold/50 uppercase mt-1 block">
+              Interiors &amp; Architecture Solution
+            </span>
+          </div>
+
+          <!-- Hero Slider Background -->
+          <div class="absolute inset-0 z-0">
+            <div class="hero-slide active absolute inset-0 w-full h-full">
+              <img src="slide-1.png" alt="งานตกแต่งภายในระดับองค์กร" class="w-full h-full object-cover filter brightness-[0.45] crisp-img" onerror="this.src='https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1920&q=80'">
+            </div>
+            <div class="hero-slide absolute inset-0 w-full h-full">
+              <img src="slide-2.png" alt="งานรับเหมาก่อสร้างครบวงจร" class="w-full h-full object-cover filter brightness-[0.45] crisp-img" onerror="this.src='https://images.unsplash.com/photo-1541888946425-d0fbb186156f?auto=format&fit=crop&w=1920&q=80'">
+            </div>
+            <div class="hero-slide absolute inset-0 w-full h-full">
+              <img src="slide-3.png" alt="งานรีโนเวทร้านอาหารและพาณิชย์" class="w-full h-full object-cover filter brightness-[0.45] crisp-img" onerror="this.src='https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1920&q=80'">
+            </div>
+            <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent"></div>
+            <div class="absolute inset-0 bg-gradient-to-r from-black/85 via-transparent to-black/60"></div>
+          </div>
+
+          <div class="relative z-20 flex justify-between items-start pt-16 sm:pt-20">
+            <div class="inline-flex items-center space-x-2 bg-black/40 backdrop-blur-md border border-brand-gold/40 text-brand-goldLight text-xs px-4 py-1.5 rounded-full">
+              <i class="fa-solid fa-compass-drafting text-brand-gold"></i>
+              <span>One Stop Construction Solution • ก่อตั้ง พ.ศ. 2544</span>
+            </div>
+          </div>
+
+          <!-- Hero Bottom Details & Badges -->
+          <div class="relative z-20 grid grid-cols-1 lg:grid-cols-12 gap-8 items-end pb-4">
+            
+            <div class="lg:col-span-8 space-y-4">
+              <h1 class="text-3xl sm:text-5xl lg:text-6xl font-heading font-extrabold text-white leading-tight">
+                คิดครบ สร้างจบ<br>
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-goldLight via-amber-200 to-brand-gold">ด้วยมาตรฐานวิศวกรรม</span>
+              </h1>
+              <p class="text-slate-300 text-sm sm:text-base font-light max-w-xl leading-relaxed">
+                บริษัท เค.วี.เอ็น พลัส จำกัด บริการรับเหมาก่อสร้าง รีโนเวท ตกแต่งภายใน งานระบบวิศวกรรม ภูมิทัศน์ และถมดินอย่างสมบูรณ์แบบ ควบคุมโดยวิศวกร กว. ควบคุมงบไม่บานปลาย ส่งมอบตรงเวลา 100%
+              </p>
+              
+              <div class="pt-3 flex flex-wrap items-center gap-4">
+                <button onclick="navTo('projects')" class="group inline-flex items-center space-x-3 bg-white hover:bg-brand-gold hover:text-white text-slate-900 text-xs sm:text-sm font-heading font-semibold pl-6 pr-2.5 py-3 rounded-full shadow-lg transition-all duration-300">
+                  <span>ดูผลงานโครงการ (Projects)</span>
+                  <span class="w-8 h-8 rounded-full bg-slate-900 group-hover:bg-white text-white group-hover:text-slate-900 flex items-center justify-center transition-colors">
+                    <i class="fa-solid fa-arrow-right text-xs"></i>
+                  </span>
+                </button>
+                <button onclick="navTo('contact')" class="inline-flex items-center space-x-2 bg-brand-gold/30 hover:bg-brand-gold text-white text-xs sm:text-sm font-heading font-semibold px-6 py-3.5 rounded-full border border-brand-gold/60 backdrop-blur-md transition">
+                  <i class="fa-solid fa-file-invoice text-brand-goldLight mr-1"></i>
+                  <span>ขอใบเสนอราคา / BOQ</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- Stats Badges -->
+            <div class="lg:col-span-4 flex flex-col sm:flex-row lg:flex-col gap-3 justify-end">
+              <div class="bg-black/50 backdrop-blur-md border border-brand-gold/40 rounded-2xl p-4 text-white flex items-center justify-between">
+                <div>
+                  <div class="font-display text-3xl font-black text-brand-goldLight">25+</div>
+                  <div class="text-[11px] text-slate-300 font-medium">Years of Engineering Experience</div>
+                </div>
+                <div class="w-10 h-10 rounded-xl bg-brand-gold/20 flex items-center justify-center text-brand-gold">
+                  <i class="fa-solid fa-shield-halved text-lg"></i>
+                </div>
+              </div>
+
+              <div class="bg-black/50 backdrop-blur-md border border-brand-gold/40 rounded-2xl p-4 text-white flex items-center justify-between">
+                <div>
+                  <div class="font-display text-3xl font-black text-brand-goldLight">350+</div>
+                  <div class="text-[11px] text-slate-300 font-medium">Completed Projects Nationwide</div>
+                </div>
+                <div class="w-10 h-10 rounded-xl bg-brand-gold/20 flex items-center justify-center text-brand-gold">
+                  <i class="fa-solid fa-city text-lg"></i>
+                </div>
+              </div>
+
+              <div class="bg-black/50 backdrop-blur-md border border-brand-gold/40 rounded-2xl p-4 text-white flex items-center justify-between">
+                <div>
+                  <div class="font-heading text-sm font-bold text-white">ลำลูกกา • กรุงเทพฯ • ทั่วไทย</div>
+                  <div class="text-[11px] text-slate-300">ควบคุมด้วยวิศวกร กว. ทุกขั้นตอน</div>
+                </div>
+                <div class="w-10 h-10 rounded-xl bg-brand-gold/20 flex items-center justify-center text-brand-gold">
+                  <i class="fa-solid fa-award text-lg"></i>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Slider Dots -->
+          <div class="relative z-20 flex justify-center space-x-2 pt-2">
+            <button onclick="setSlide(0)" class="slide-dot w-8 h-1.5 rounded-full bg-brand-gold transition-all"></button>
+            <button onclick="setSlide(1)" class="slide-dot w-2.5 h-1.5 rounded-full bg-white/50 hover:bg-white transition-all"></button>
+            <button onclick="setSlide(2)" class="slide-dot w-2.5 h-1.5 rounded-full bg-white/50 hover:bg-white transition-all"></button>
+          </div>
+
+        </div>
+
+        <!-- ================= TRUSTED CLIENTS STRIP ================= -->
+        <div class="glass-card rounded-2xl p-6 border border-brand-gold/25 shadow-sm">
+          <p class="text-center font-display text-[11px] tracking-[0.25em] uppercase text-brand-goldDark font-semibold mb-4">
+            TRUSTED BY LEADING BRANDS &amp; ORGANIZATIONS
+          </p>
+          <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4">
+            <div class="p-3.5 bg-white rounded-xl border border-brand-gold/20 text-center font-heading font-semibold text-xs text-slate-700 flex items-center justify-center space-x-2 shadow-sm">
+              <i class="fa-solid fa-utensils text-brand-gold"></i>
+              <span>BAR B Q PLAZA</span>
+            </div>
+            <div class="p-3.5 bg-white rounded-xl border border-brand-gold/20 text-center font-heading font-semibold text-xs text-slate-700 flex items-center justify-center space-x-2 shadow-sm">
+              <i class="fa-solid fa-car text-brand-gold"></i>
+              <span>PEUGEOT THAILAND</span>
+            </div>
+            <div class="p-3.5 bg-white rounded-xl border border-brand-gold/20 text-center font-heading font-semibold text-xs text-slate-700 flex items-center justify-center space-x-2 shadow-sm">
+              <i class="fa-solid fa-landmark text-brand-gold"></i>
+              <span>การทางพิเศษฯ (กทพ.)</span>
+            </div>
+            <div class="p-3.5 bg-white rounded-xl border border-brand-gold/20 text-center font-heading font-semibold text-xs text-slate-700 flex items-center justify-center space-x-2 shadow-sm">
+              <i class="fa-solid fa-building-columns text-brand-gold"></i>
+              <span>ธนาคารกรุงไทย (KTB)</span>
+            </div>
+            <div class="p-3.5 bg-white rounded-xl border border-brand-gold/20 text-center font-heading font-semibold text-xs text-slate-700 flex items-center justify-center space-x-2 shadow-sm col-span-2 sm:col-span-1">
+              <i class="fa-solid fa-hotel text-brand-gold"></i>
+              <span>CONRAD KOH SAMUI</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- ================= BENTO INTRO: ABOUT KVN PLUS ================= -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+          
+          <div class="lg:col-span-5 glass-card rounded-[2rem] p-8 sm:p-10 flex flex-col justify-between border border-brand-gold/25 shadow-card">
+            <div>
+              <span class="font-display text-[10px] tracking-[0.25em] uppercase text-brand-gold font-bold">
+                ABOUT KVN PLUS
+              </span>
+              <h2 class="text-2xl sm:text-3xl font-heading font-extrabold text-brand-dark mt-2 leading-tight">
+                ใส่ใจทุกรายละเอียด<br>
+                <span class="text-brand-gold">มาตรฐานวิศวกรรมชั้นนำ</span>
+              </h2>
+              <p class="text-slate-600 text-sm mt-4 leading-relaxed font-sans">
+                จากจุดเริ่มต้น พ.ศ. 2544 สู่ความเชี่ยวชาญกว่า 25 ปีในอุตสาหกรรมก่อสร้าง KVN PLUS มุ่งเน้นการส่งมอบผลงานคุณภาพสูงที่ผสานความสวยงาม ความมั่นคงแข็งแรง และความคุ้มค่าของงบประมาณอย่างลงตัว
+              </p>
+			  <p class="text-slate-600 text-sm mt-4 leading-relaxed font-sans">
+                ปัจจุบัน ด้วยประสบการณ์ที่สั่งสมมายาวนานกว่า 25 ปี บริษัทได้เปลี่ยนชื่อเป็น <h2 class="text-2xl sm:text-2xl font-heading font-extrabold text-brand-dark mt-2 leading-tight">บริษัท เค.วี.เอ็น พลัส จำกัด</h2> เพื่อสะท้อนถึงการเติบโตและศักยภาพในการให้บริการที่หลากหลาย
+              </p>
+
+              <div class="grid grid-cols-3 gap-4 mt-8 pt-6 border-t border-brand-gold/20 text-center">
+                <div>
+                  <div class="w-10 h-10 mx-auto rounded-full bg-brand-goldChampagne border border-brand-gold/30 text-brand-gold flex items-center justify-center mb-2">
+                    <i class="fa-solid fa-clipboard-check text-sm"></i>
+                  </div>
+                  <h4 class="text-xs font-heading font-bold text-slate-800">วิศวกร กว.</h4>
+                  <p class="text-[10px] text-slate-500 mt-0.5">ควบคุมงานจริง</p>
+                </div>
+                <div>
+                  <div class="w-10 h-10 mx-auto rounded-full bg-brand-goldChampagne border border-brand-gold/30 text-brand-gold flex items-center justify-center mb-2">
+                    <i class="fa-solid fa-coins text-sm"></i>
+                  </div>
+                  <h4 class="text-xs font-heading font-bold text-slate-800">คุมงบชัดเจน</h4>
+                  <p class="text-[10px] text-slate-500 mt-0.5">ไม่มีบานปลาย</p>
+                </div>
+                <div>
+                  <div class="w-10 h-10 mx-auto rounded-full bg-brand-goldChampagne border border-brand-gold/30 text-brand-gold flex items-center justify-center mb-2">
+                    <i class="fa-solid fa-clock-rotate-left text-sm"></i>
+                  </div>
+                  <h4 class="text-xs font-heading font-bold text-slate-800">ส่งมอบตรงเวลา</h4>
+                  <p class="text-[10px] text-slate-500 mt-0.5">Fast-track พร้อมใช้</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="pt-8">
+              <button onclick="navTo('about')" class="group inline-flex items-center space-x-2 text-xs font-heading font-semibold text-brand-dark hover:text-brand-gold transition">
+                <span>อ่านประวัติและทีมผู้บริหาร</span>
+                <i class="fa-solid fa-arrow-right text-[11px] group-hover:translate-x-1 transition-transform"></i>
+              </button>
+            </div>
+          </div>
+
+          <div class="lg:col-span-7 relative rounded-[2rem] overflow-hidden min-h-[360px] border border-brand-gold/30 shadow-card group">
+            <img src="img-4.png" alt="สำนักงาน บริษัท เค.วี.เอ็น พลัส จำกัด" class="w-full h-full object-cover group-hover:scale-105 transition duration-700 crisp-img" onerror="this.src='https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1200&q=80'">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+            
+            <div class="absolute bottom-6 left-6 bg-black/65 backdrop-blur-md border border-brand-gold/40 text-white px-5 py-3.5 rounded-2xl">
+              <div class="text-[10px] font-display uppercase tracking-widest text-brand-gold">ESTABLISHED</div>
+              <div class="text-2xl font-display font-bold text-white leading-tight">SINCE 2001</div>
+              <div class="text-xs text-slate-300 font-sans">25+ ปีแห่งความไว้วางใจ • อาคารสำนักงานและโรงงานมาตรฐาน</div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- ================= 6 CORE SERVICES GRID ================= -->
+        <div class="space-y-6">
+          <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4">
+            <div>
+              <span class="font-display text-[10px] tracking-[0.25em] uppercase text-brand-gold font-bold">OUR SERVICES</span>
+              <h2 class="text-2xl sm:text-3xl font-heading font-extrabold text-brand-dark mt-1">6 บริการหลักครอบคลุมทุกมิติ</h2>
+            </div>
+            <button onclick="navTo('services')" class="text-xs font-heading font-semibold text-brand-gold hover:text-brand-goldDark inline-flex items-center space-x-1 self-start sm:self-auto">
+              <span>ดูรายละเอียดบริการทั้งหมด</span>
+              <i class="fa-solid fa-arrow-right text-[10px]"></i>
+            </button>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            
+            <!-- Service 1 -->
+            <div class="glass-card glass-card-hover rounded-3xl p-6 flex flex-col justify-between cursor-pointer group" onclick="openGallery('service-1')">
+              <div>
+                <div class="flex items-center justify-between mb-4">
+                  <div class="w-12 h-12 rounded-2xl bg-brand-goldChampagne border border-brand-gold/30 text-brand-gold flex items-center justify-center text-xl">
+                    <i class="fa-solid fa-city"></i>
+                  </div>
+                  <span class="text-[10px] font-display font-semibold tracking-wider text-brand-gold uppercase bg-brand-goldChampagne px-2 py-0.5 rounded-full border border-brand-gold/30 flex items-center space-x-1">
+                    <i class="fa-regular fa-images text-[9px]"></i>
+                    <span>คลิกดูรูปเพิ่มเติม</span>
+                  </span>
+                </div>
+                <h3 class="text-lg font-heading font-bold text-slate-900 mb-2 group-hover:text-brand-gold transition">งานก่อสร้าง (Construction)</h3>
+                <p class="text-xs text-slate-600 leading-relaxed">
+                  รับเหมาก่อสร้างอาคาร โรงงาน โครงสร้าง คสล. และโครงเหล็กช่วงกว้าง ควบคุมงานโดยสามัญวิศวกรโยธา
+                </p>
+              </div>
+              <div class="pt-6 flex items-center justify-between border-t border-brand-gold/15 mt-4">
+                <span class="text-xs font-heading font-semibold text-brand-dark">คลิกดูขั้นตอนและรูปงาน</span>
+                <span class="w-7 h-7 rounded-full bg-brand-goldChampagne text-brand-gold flex items-center justify-center text-xs group-hover:bg-brand-gold group-hover:text-white transition">
+                  <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                </span>
+              </div>
+            </div>
+
+            <!-- Service 2 -->
+            <div class="glass-card glass-card-hover rounded-3xl p-6 flex flex-col justify-between cursor-pointer group" onclick="openGallery('service-2')">
+              <div>
+                <div class="flex items-center justify-between mb-4">
+                  <div class="w-12 h-12 rounded-2xl bg-brand-goldChampagne border border-brand-gold/30 text-brand-gold flex items-center justify-center text-xl">
+                    <i class="fa-solid fa-hammer"></i>
+                  </div>
+                  <span class="text-[10px] font-display font-semibold tracking-wider text-brand-gold uppercase bg-brand-goldChampagne px-2 py-0.5 rounded-full border border-brand-gold/30 flex items-center space-x-1">
+                    <i class="fa-regular fa-images text-[9px]"></i>
+                    <span>คลิกดูรูปเพิ่มเติม</span>
+                  </span>
+                </div>
+                <h3 class="text-lg font-heading font-bold text-slate-900 mb-2 group-hover:text-brand-gold transition">งานรีโนเวท (Renovation)</h3>
+                <p class="text-xs text-slate-600 leading-relaxed">
+                  ปรับโฉมอาคารเดิม ห้องประชุมผู้บริหาร สำนักงาน และร้านอาหารแบรนด์ดัง ด้วยระบบ Fast-track ส่งมอบทันเปิดทำการ
+                </p>
+              </div>
+              <div class="pt-6 flex items-center justify-between border-t border-brand-gold/15 mt-4">
+                <span class="text-xs font-heading font-semibold text-brand-dark">คลิกดูขั้นตอนและรูปงาน</span>
+                <span class="w-7 h-7 rounded-full bg-brand-goldChampagne text-brand-gold flex items-center justify-center text-xs group-hover:bg-brand-gold group-hover:text-white transition">
+                  <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                </span>
+              </div>
+            </div>
+
+            <!-- Service 3 -->
+            <div class="glass-card glass-card-hover rounded-3xl p-6 flex flex-col justify-between cursor-pointer group" onclick="openGallery('service-3')">
+              <div>
+                <div class="flex items-center justify-between mb-4">
+                  <div class="w-12 h-12 rounded-2xl bg-brand-goldChampagne border border-brand-gold/30 text-brand-gold flex items-center justify-center text-xl">
+                    <i class="fa-solid fa-couch"></i>
+                  </div>
+                  <span class="text-[10px] font-display font-semibold tracking-wider text-brand-gold uppercase bg-brand-goldChampagne px-2 py-0.5 rounded-full border border-brand-gold/30 flex items-center space-x-1">
+                    <i class="fa-regular fa-images text-[9px]"></i>
+                    <span>คลิกดูรูปเพิ่มเติม</span>
+                  </span>
+                </div>
+                <h3 class="text-lg font-heading font-bold text-slate-900 mb-2 group-hover:text-brand-gold transition">งานตกแต่งภายใน (Interior)</h3>
+                <p class="text-xs text-slate-600 leading-relaxed">
+                  ตกแต่งหอประชุม โถงต้อนรับ บิ้วอินเฟอร์นิเจอร์สั่งทำ และผนังอะคูสติกป้องกันเสียงสะท้อนมาตรฐานสากล
+                </p>
+              </div>
+              <div class="pt-6 flex items-center justify-between border-t border-brand-gold/15 mt-4">
+                <span class="text-xs font-heading font-semibold text-brand-dark">คลิกดูขั้นตอนและรูปงาน</span>
+                <span class="w-7 h-7 rounded-full bg-brand-goldChampagne text-brand-gold flex items-center justify-center text-xs group-hover:bg-brand-gold group-hover:text-white transition">
+                  <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                </span>
+              </div>
+            </div>
+
+            <!-- Service 4 -->
+            <div class="glass-card glass-card-hover rounded-3xl p-6 flex flex-col justify-between cursor-pointer group" onclick="openGallery('service-4')">
+              <div>
+                <div class="flex items-center justify-between mb-4">
+                  <div class="w-12 h-12 rounded-2xl bg-brand-goldChampagne border border-brand-gold/30 text-brand-gold flex items-center justify-center text-xl">
+                    <i class="fa-solid fa-gears"></i>
+                  </div>
+                  <span class="text-[10px] font-display font-semibold tracking-wider text-brand-gold uppercase bg-brand-goldChampagne px-2 py-0.5 rounded-full border border-brand-gold/30 flex items-center space-x-1">
+                    <i class="fa-regular fa-images text-[9px]"></i>
+                    <span>คลิกดูรูปเพิ่มเติม</span>
+                  </span>
+                </div>
+                <h3 class="text-lg font-heading font-bold text-slate-900 mb-2 group-hover:text-brand-gold transition">งานระบบอาคาร (System MEP)</h3>
+                <p class="text-xs text-slate-600 leading-relaxed">
+                  วางระบบไฟฟ้ากำลัง ท่อดับเพลิง สุขาภิบาล แอร์ HVAC ตรวจสอบและรับรองโดยวิศวกรไฟฟ้า กว. ควบคุม
+                </p>
+              </div>
+              <div class="pt-6 flex items-center justify-between border-t border-brand-gold/15 mt-4">
+                <span class="text-xs font-heading font-semibold text-brand-dark">คลิกดูขั้นตอนและรูปงาน</span>
+                <span class="w-7 h-7 rounded-full bg-brand-goldChampagne text-brand-gold flex items-center justify-center text-xs group-hover:bg-brand-gold group-hover:text-white transition">
+                  <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                </span>
+              </div>
+            </div>
+
+            <!-- Service 5 -->
+            <div class="glass-card glass-card-hover rounded-3xl p-6 flex flex-col justify-between cursor-pointer group" onclick="openGallery('service-5')">
+              <div>
+                <div class="flex items-center justify-between mb-4">
+                  <div class="w-12 h-12 rounded-2xl bg-brand-goldChampagne border border-brand-gold/30 text-brand-gold flex items-center justify-center text-xl">
+                    <i class="fa-solid fa-leaf"></i>
+                  </div>
+                  <span class="text-[10px] font-display font-semibold tracking-wider text-brand-gold uppercase bg-brand-goldChampagne px-2 py-0.5 rounded-full border border-brand-gold/30 flex items-center space-x-1">
+                    <i class="fa-regular fa-images text-[9px]"></i>
+                    <span>คลิกดูรูปเพิ่มเติม</span>
+                  </span>
+                </div>
+                <h3 class="text-lg font-heading font-bold text-slate-900 mb-2 group-hover:text-brand-gold transition">งานภูมิทัศน์ (Landscape)</h3>
+                <p class="text-xs text-slate-600 leading-relaxed">
+                  ปรับแต่งภูมิทัศน์ ซุ้มไม้ อุโมงค์พรรณไม้ ทางเดินคนเดิน ลานกิจกรรม และระบบ Hardscape ยกระดับภาพลักษณ์
+                </p>
+              </div>
+              <div class="pt-6 flex items-center justify-between border-t border-brand-gold/15 mt-4">
+                <span class="text-xs font-heading font-semibold text-brand-dark">คลิกดูขั้นตอนและรูปงาน</span>
+                <span class="w-7 h-7 rounded-full bg-brand-goldChampagne text-brand-gold flex items-center justify-center text-xs group-hover:bg-brand-gold group-hover:text-white transition">
+                  <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                </span>
+              </div>
+            </div>
+
+            <!-- Service 6 -->
+            <div class="glass-card glass-card-hover rounded-3xl p-6 flex flex-col justify-between cursor-pointer group" onclick="openGallery('service-6')">
+              <div>
+                <div class="flex items-center justify-between mb-4">
+                  <div class="w-12 h-12 rounded-2xl bg-brand-goldChampagne border border-brand-gold/30 text-brand-gold flex items-center justify-center text-xl">
+                    <i class="fa-solid fa-truck-monster"></i>
+                  </div>
+                  <span class="text-[10px] font-display font-semibold tracking-wider text-brand-gold uppercase bg-brand-goldChampagne px-2 py-0.5 rounded-full border border-brand-gold/30 flex items-center space-x-1">
+                    <i class="fa-regular fa-images text-[9px]"></i>
+                    <span>คลิกดูรูปเพิ่มเติม</span>
+                  </span>
+                </div>
+                <h3 class="text-lg font-heading font-bold text-slate-900 mb-2 group-hover:text-brand-gold transition">งานถมดิน (Earthwork)</h3>
+                <p class="text-xs text-slate-600 leading-relaxed">
+                  เคลียร์ริ่ง ถมดิน บดอัดตามค่ามาตรฐาน วางท่อระบายน้ำ คสล. ด้วยเครื่องจักรกลหนักครบครัน
+                </p>
+              </div>
+              <div class="pt-6 flex items-center justify-between border-t border-brand-gold/15 mt-4">
+                <span class="text-xs font-heading font-semibold text-brand-dark">คลิกดูขั้นตอนและรูปงาน</span>
+                <span class="w-7 h-7 rounded-full bg-brand-goldChampagne text-brand-gold flex items-center justify-center text-xs group-hover:bg-brand-gold group-hover:text-white transition">
+                  <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                </span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- ================= SELECTED PROJECTS SHOWCASE ================= -->
+        <div class="space-y-6">
+          <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4">
+            <div>
+              <span class="font-display text-[10px] tracking-[0.25em] uppercase text-brand-gold font-bold">SELECTED PROJECTS</span>
+              <h2 class="text-2xl sm:text-3xl font-heading font-extrabold text-brand-dark mt-1">ผลงานระดับพรีเมียมที่ส่งมอบสำเร็จ</h2>
+            </div>
+            <button onclick="navTo('projects')" class="group inline-flex items-center space-x-2 bg-brand-dark hover:bg-brand-gold text-white text-xs font-heading px-5 py-2.5 rounded-full transition-all duration-300">
+              <span>สำรวจผลงานทั้งหมด</span>
+              <i class="fa-solid fa-arrow-right text-[10px] group-hover:translate-x-1 transition-transform"></i>
+            </button>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+            
+            <!-- Project 1: Bar B Q Plaza -->
+            <div class="group rounded-3xl overflow-hidden glass-card border border-brand-gold/25 cursor-pointer shadow-sm hover:shadow-xl transition" onclick="openGallery('proj-bbq')">
+              <div class="h-60 overflow-hidden relative">
+                <img src="img-12.png" alt="Bar B Q Plaza" class="w-full h-full object-cover group-hover:scale-105 transition duration-500 crisp-img" onerror="this.src='https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=600&q=80'">
+                <span class="absolute top-3 right-3 bg-white/90 text-slate-900 text-[10px] font-heading font-bold px-2.5 py-1 rounded-full shadow-sm flex items-center space-x-1">
+                  <i class="fa-regular fa-images text-brand-gold"></i>
+                  <span>คลิกดูรูปเพิ่มเติม</span>
+                </span>
+              </div>
+              <div class="p-4">
+                <h4 class="text-sm font-heading font-bold text-slate-900 group-hover:text-brand-gold transition">ร้านอาหาร Bar B Q Plaza</h4>
+                <p class="text-[11px] text-slate-500 mt-1">รีโนเวทร้านอาหารระบบดูดควันและเฟอร์นิเจอร์ พร้อมตกแต่ง</p>
+              </div>
+            </div>
+
+            <!-- Project 2: โถง กทพ. -->
+            <div class="group rounded-3xl overflow-hidden glass-card border border-brand-gold/25 cursor-pointer shadow-sm hover:shadow-xl transition" onclick="openGallery('proj-exat-lobby')">
+              <div class="h-60 overflow-hidden relative">
+                <img src="img-11.png" alt="โถงต้อนรับ กทพ." class="w-full h-full object-cover group-hover:scale-105 transition duration-500 crisp-img" onerror="this.src='https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=600&q=80'">
+                <span class="absolute top-3 right-3 bg-white/90 text-slate-900 text-[10px] font-heading font-bold px-2.5 py-1 rounded-full shadow-sm flex items-center space-x-1">
+                  <i class="fa-regular fa-images text-brand-gold"></i>
+                  <span>คลิกดูรูปเพิ่มเติม</span>
+                </span>
+              </div>
+              <div class="p-4">
+                <h4 class="text-sm font-heading font-bold text-slate-900 group-hover:text-brand-gold transition">โถงต้อนรับ การทางพิเศษฯ</h4>
+                <p class="text-[11px] text-slate-500 mt-1">งานตกแต่งโถง Atrium เพดานสูงระดับพรีเมียม</p>
+              </div>
+            </div>
+
+            <!-- Project 3: ห้องประชุมใหญ่ กทพ. -->
+            <div class="group rounded-3xl overflow-hidden glass-card border border-brand-gold/25 cursor-pointer shadow-sm hover:shadow-xl transition" onclick="openGallery('proj-exat-meeting')">
+              <div class="h-60 overflow-hidden relative">
+                <img src="img-1.png" alt="ห้องประชุม กทพ." class="w-full h-full object-cover group-hover:scale-105 transition duration-500 crisp-img" onerror="this.src='https://images.unsplash.com/photo-1431540015161-0bf868a2d407?auto=format&fit=crop&w=600&q=80'">
+                <span class="absolute top-3 right-3 bg-white/90 text-slate-900 text-[10px] font-heading font-bold px-2.5 py-1 rounded-full shadow-sm flex items-center space-x-1">
+                  <i class="fa-regular fa-images text-brand-gold"></i>
+                  <span>คลิกดูรูปเพิ่มเติม</span>
+                </span>
+              </div>
+              <div class="p-4">
+                <h4 class="text-sm font-heading font-bold text-slate-900 group-hover:text-brand-gold transition">ห้องประชุมใหญ่ ผู้บริหาร</h4>
+                <p class="text-[11px] text-slate-500 mt-1">ระบบผนังกันเสียง Acoustic &amp; ไมค์ประชุม</p>
+              </div>
+            </div>
+
+            <!-- Project 4: มูลนิธิเพื่อนพึ่ง(ภาฯ) -->
+            <div class="group rounded-3xl overflow-hidden glass-card border border-brand-gold/25 cursor-pointer shadow-sm hover:shadow-xl transition" onclick="openGallery('proj-pafe')">
+              <div class="h-60 overflow-hidden relative">
+                <img src="img-5.png" alt="มูลนิธิอาสาเพื่อนพึ่ง(ภาฯ)" class="w-full h-full object-cover group-hover:scale-105 transition duration-500 crisp-img" onerror="this.src='https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=600&q=80'">
+                <span class="absolute top-3 right-3 bg-white/90 text-slate-900 text-[10px] font-heading font-bold px-2.5 py-1 rounded-full shadow-sm flex items-center space-x-1">
+                  <i class="fa-regular fa-images text-brand-gold"></i>
+                  <span>คลิกดูรูปเพิ่มเติม</span>
+                </span>
+              </div>
+              <div class="p-4">
+                <h4 class="text-sm font-heading font-bold text-slate-900 group-hover:text-brand-gold transition">มูลนิธิเพื่อนพึ่ง(ภาฯ)ยามยาก</h4>
+                <p class="text-[11px] text-slate-500 mt-1">งานตกแต่งสถาปัตยกรรมวินเทจประณีตสูง</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- ================= FEATURED HIGHLIGHT PROJECT ================= -->
+        <div class="rounded-[2.2rem] overflow-hidden border border-brand-gold/30 bg-brand-dark text-white p-8 sm:p-12 relative shadow-2xl">
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+            
+            <div class="lg:col-span-5 space-y-4">
+              <span class="text-[10px] font-display tracking-[0.25em] uppercase text-brand-goldLight font-semibold">FEATURED PROJECT HIGHLIGHT</span>
+              <h3 class="text-2xl sm:text-3xl font-heading font-extrabold text-white leading-tight">
+                Modern Precision.<br>
+                <span class="text-brand-goldLight">Timeless Engineering.</span>
+              </h3>
+              <p class="text-xs sm:text-sm text-slate-300 leading-relaxed font-sans font-light">
+                งานบูรณะและปรับปรุงพื้นที่ราชการและองค์กรขนาดใหญ่ ที่ผสานงานระบบวิศวกรรมอาคาร ความปลอดภัย และความหรูหราเข้าด้วยกันอย่างสมบูรณ์แบบ
+              </p>
+              <div class="space-y-1.5 text-xs text-slate-300 pt-2 font-sans">
+                <div class="flex items-center space-x-2"><i class="fa-regular fa-circle-dot text-brand-goldLight text-[10px]"></i><span>ขอบข่าย: โครงสร้าง, งานระบบ MEP, งานตกแต่งภายใน</span></div>
+                <div class="flex items-center space-x-2"><i class="fa-regular fa-circle-dot text-brand-goldLight text-[10px]"></i><span>มาตรฐาน: ควบคุมโดยวิศวกร กว. และส่งมอบตรงตามสัญญา</span></div>
+              </div>
+              <div class="pt-4">
+                <button onclick="openGallery('proj-landmark')" class="group inline-flex items-center space-x-3 bg-white hover:bg-brand-gold hover:text-white text-slate-900 text-xs font-heading font-semibold pl-5 pr-2 py-2 rounded-full transition duration-300">
+                  <span>คลิกดูแกลเลอรีภาพโครงการ (3 รูป)</span>
+                  <span class="w-6 h-6 rounded-full bg-slate-900 group-hover:bg-white text-white group-hover:text-slate-900 flex items-center justify-center transition">
+                    <i class="fa-solid fa-arrow-right text-[9px]"></i>
+                  </span>
+                </button>
+              </div>
+            </div>
+
+            <div class="lg:col-span-7 rounded-2xl overflow-hidden border border-brand-gold/30 h-72 sm:h-80 shadow-lg cursor-pointer group" onclick="openGallery('proj-landmark')">
+              <img src="img-3.png" alt="อาคารแลนด์มาร์ค" class="w-full h-full object-cover group-hover:scale-105 transition duration-500 crisp-img" onerror="this.src='https://images.unsplash.com/photo-1541971875076-8f970d573be6?auto=format&fit=crop&w=1200&q=80'">
+            </div>
+
+          </div>
+        </div>
+
+        <!-- ================= EXECUTIVE & GUARANTEE CARD ================= -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+          
+          <div class="lg:col-span-4 glass-card rounded-[2rem] p-8 border border-brand-gold/30 flex flex-col justify-between shadow-card">
+            <div>
+              <span class="text-[10px] font-display uppercase tracking-[0.2em] text-brand-gold font-bold">EXECUTIVE MESSAGE</span>
+              <h3 class="text-xl sm:text-2xl font-heading font-extrabold text-slate-900 mt-2">
+                คุณณฐภร เสริมศรี
+              </h3>
+              <p class="text-xs text-brand-gold font-semibold mt-0.5">กรรมการผู้จัดการ (Managing Director)</p>
+              <div class="w-28 h-32 rounded-xl overflow-hidden my-4 border-2 border-brand-gold/40 shadow-sm cursor-pointer group" onclick="openSingleImage('profile-md.png', 'คุณณฐภร เสริมศรี', 'กรรมการผู้จัดการ (Managing Director) บริษัท เค.วี.เอ็น พลัส จำกัด')">
+                <img src="profile-md.png" alt="คุณณฐภร เสริมศรี" class="w-full h-full object-cover group-hover:scale-105 transition crisp-img" onerror="this.src='https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=400&q=80'">
+              </div>
+              <p class="text-xs text-slate-600 font-sans leading-relaxed">
+                “KVN PLUS เติบโตไปพร้อมกับความไว้วางใจของลูกค้า โดยยึดมั่นในคุณภาพ มาตรฐาน และความซื่อสัตย์เป็นหัวใจสำคัญเสมอมา”
+              </p>
+            </div>
+            <button onclick="navTo('about')" class="mt-6 text-xs font-heading font-semibold text-brand-dark hover:text-brand-gold inline-flex items-center space-x-1">
+              <span>อ่านโครงสร้างผู้บริหารและวิศวกร</span>
+              <i class="fa-solid fa-arrow-right text-[10px]"></i>
+            </button>
+          </div>
+
+          <div class="lg:col-span-8 bg-[#181d26] text-white rounded-[2rem] p-8 sm:p-10 border border-brand-gold/30 flex flex-col justify-between shadow-2xl relative">
+            <div class="flex items-start justify-between">
+              <i class="fa-solid fa-quote-left text-4xl text-brand-gold/40"></i>
+              <div class="flex items-center space-x-1 text-brand-goldLight text-xs">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <span class="text-white text-[11px] ml-1.5 font-bold">100% On-Time Delivery</span>
+              </div>
+            </div>
+
+            <blockquote class="my-6 text-base sm:text-lg font-heading font-light text-slate-200 leading-relaxed">
+              “ตลอดเวลากว่า 25 ปีในธุรกิจ เรารักษาคำมั่นสัญญากับลูกค้าทุกรายเสมอ ไม่ว่าจะเป็นงานสร้างใหม่หรืองานรีโนเวทแบบเร่งด่วน การมีวิศวกรควบคุมงานอย่างใกล้ชิดช่วยให้เราส่งมอบผลงานได้ตามงบประมาณและเวลาที่กำหนดอย่างแม่นยำ”
+            </blockquote>
+
+            <div class="pt-4 border-t border-slate-700/60 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+              <div>
+                <div class="font-heading font-bold text-sm text-white">บริษัท เค.วี.เอ็น พลัส จำกัด (KVN PLUS CO., LTD.)</div>
+                <div class="text-[11px] text-brand-goldLight">จดทะเบียนนิติบุคคลถูกต้องตามกฎหมาย เลขที่ 0135544004051</div>
+              </div>
+              <div class="flex items-center space-x-2">
+                <span class="inline-flex items-center space-x-1.5 bg-brand-gold/20 border border-brand-gold/40 text-brand-goldLight text-[11px] px-3.5 py-1.5 rounded-full">
+                  <i class="fa-solid fa-certificate text-[10px]"></i>
+                  <span>มีใบอนุญาตวิศวกรรมควบคุม (กว.)</span>
+                </span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- ================= BOTTOM CTA BANNER ================= -->
+        <div class="rounded-[2.2rem] bg-gradient-to-r from-brand-goldChampagne via-white to-brand-goldChampagne border border-brand-gold/30 p-8 sm:p-10 shadow-card">
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+            
+            <div class="lg:col-span-5 space-y-2">
+              <h3 class="text-2xl font-heading font-extrabold text-brand-dark">
+                เริ่มต้นโครงการของคุณวันนี้
+              </h3>
+              <p class="text-xs text-slate-600 font-sans leading-relaxed">
+                ติดต่อทีมวิศวกร เค.วี.เอ็น พลัส เพื่อปรึกษาแบบ ประเมินราคา หรือนัดสำรวจหน้างานฟรี
+              </p>
+            </div>
+
+            <div class="lg:col-span-4 space-y-2 text-xs text-slate-700">
+              <div class="flex items-center space-x-2">
+                <i class="fa-solid fa-phone text-brand-gold"></i>
+                <a href="tel:0889874539" class="hover:text-brand-gold font-bold">088-987-4539 (คุณฝน)</a>
+                <span>/</span>
+                <a href="tel:021010122" class="hover:text-brand-gold">02-101-0122</a>
+              </div>
+              <div class="flex items-center space-x-2">
+                <i class="fa-brands fa-line text-brand-line text-sm"></i>
+                <span>LINE Official: <strong class="text-emerald-800">KVNPLUS</strong></span>
+              </div>
+            </div>
+
+            <div class="lg:col-span-3 flex justify-start lg:justify-end">
+              <button onclick="navTo('contact')" class="group flex items-center space-x-3 bg-brand-dark hover:bg-brand-gold text-white text-xs font-heading font-semibold pl-6 pr-2.5 py-3 rounded-full shadow-lg transition-all duration-300">
+                <span>ขอใบเสนอราคา (BOQ)</span>
+                <span class="w-8 h-8 rounded-full bg-white/20 group-hover:bg-white group-hover:text-brand-dark flex items-center justify-center transition">
+                  <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                </span>
+              </button>
+            </div>
+
+          </div>
+        </div>
+
+      </section>
+
+      <!-- ================= 2. PAGE: SERVICES ================= -->
+      <section id="page-services" class="page-view space-y-10">
+        
+        <div class="glass-card rounded-[2rem] p-8 sm:p-12 text-center border border-brand-gold/30">
+          <span class="font-display text-[10px] tracking-[0.25em] uppercase text-brand-gold font-bold">OUR CAPABILITIES</span>
+          <h1 class="text-3xl sm:text-4xl font-heading font-extrabold text-brand-dark mt-2">6 บริการหลักด้านวิศวกรรมและสถาปัตยกรรม</h1>
+          <p class="text-slate-600 text-xs sm:text-sm max-w-2xl mx-auto mt-3 font-sans">
+            คลิกที่การ์ดหรือภาพเพื่อดู <strong>แกลเลอรีภาพขั้นตอนการทำงานจริง</strong> ของแต่ละบริการ
+          </p>
+        </div>
+
+        <div class="space-y-8">
+          
+          <!-- SERVICE 01 -->
+          <div class="glass-card rounded-3xl p-8 border border-brand-gold/25 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+            <div class="lg:col-span-7 space-y-3">
+              <div class="inline-flex items-center space-x-2 bg-brand-goldChampagne text-brand-gold text-xs font-bold px-3.5 py-1 rounded-full border border-brand-gold/30">
+                <i class="fa-solid fa-city"></i>
+                <span>01 • CONSTRUCTION</span>
+              </div>
+              <h3 class="text-2xl font-heading font-bold text-slate-900">งานก่อสร้าง (Construction)</h3>
+              <p class="text-xs sm:text-sm text-slate-600 leading-relaxed font-sans">
+                รับเหมาก่อสร้างโครงสร้างอาคารทั้งระบบ ทั้งงานคอนกรีตเสริมเหล็ก (RC) และโครงสร้างเหล็กรูปพรรณ (Steel Structure) สำหรับโรงงานอุตสาหกรรม คลังสินค้า อาคารพาณิชย์ และโครงการพิเศษริมทะเล/พื้นที่ลาดชัน
+              </p>
+              <ul class="space-y-2 text-xs text-slate-700 font-sans pt-2">
+                <li class="flex items-center space-x-2"><i class="fa-solid fa-check text-brand-gold"></i><span>งานตอกเสาเข็ม งานฐานราก งานคานคอดิน และเสาคานมาตรฐานวิศวกรรม</span></li>
+                <li class="flex items-center space-x-2"><i class="fa-solid fa-check text-brand-gold"></i><span>งานโครงสร้างคอนกรีตเสริมเหล็กและงานโครงถักเหล็กช่วงกว้าง (Clear Span)</span></li>
+                <li class="flex items-center space-x-2"><i class="fa-solid fa-check text-brand-gold"></i><span>ควบคุมและตรวจสอบความปลอดภัยโดยสามัญวิศวกรโยธาตลอดระยะเวลาก่อสร้าง</span></li>
+              </ul>
+              <div class="pt-2">
+                <button onclick="openGallery('service-1')" class="inline-flex items-center space-x-2 text-xs font-heading font-semibold text-brand-gold hover:text-brand-goldDark bg-brand-goldChampagne px-4 py-2 rounded-full border border-brand-gold/30">
+                  <i class="fa-regular fa-images"></i>
+                  <span>ดูภาพขั้นตอนงานก่อสร้าง (4 รูป)</span>
+                  <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                </button>
+              </div>
+            </div>
+            <div class="lg:col-span-5 h-64 rounded-2xl overflow-hidden border border-brand-gold/30 shadow-md cursor-pointer group relative" onclick="openGallery('service-1')">
+              <img src="service-1.png" alt="งานก่อสร้าง" class="w-full h-full object-cover group-hover:scale-105 transition duration-500 crisp-img" onerror="this.src='https://images.unsplash.com/photo-1541888946425-d0fbb186156f?auto=format&fit=crop&w=800&q=80'">
+              <div class="absolute inset-0 bg-black/30 group-hover:bg-black/10 transition flex items-center justify-center">
+                <span class="bg-white/95 text-slate-900 text-xs font-heading font-semibold px-4 py-2 rounded-full shadow-lg flex items-center space-x-2">
+                  <i class="fa-solid fa-magnifying-glass-plus text-brand-gold"></i>
+                  <span>คลิกดูแกลเลอรีภาพ</span>
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <!-- SERVICE 02 -->
+          <div class="glass-card rounded-3xl p-8 border border-brand-gold/25 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+            <div class="lg:col-span-5 order-2 lg:order-1 h-64 rounded-2xl overflow-hidden border border-brand-gold/30 shadow-md cursor-pointer group relative" onclick="openGallery('service-2')">
+              <img src="service-2.png" alt="งานรีโนเวท" class="w-full h-full object-cover group-hover:scale-105 transition duration-500 crisp-img" onerror="this.src='https://images.unsplash.com/photo-1431540015161-0bf868a2d407?auto=format&fit=crop&w=800&q=80'">
+              <div class="absolute inset-0 bg-black/30 group-hover:bg-black/10 transition flex items-center justify-center">
+                <span class="bg-white/95 text-slate-900 text-xs font-heading font-semibold px-4 py-2 rounded-full shadow-lg flex items-center space-x-2">
+                  <i class="fa-solid fa-magnifying-glass-plus text-brand-gold"></i>
+                  <span>คลิกดูแกลเลอรีภาพ</span>
+                </span>
+              </div>
+            </div>
+            <div class="lg:col-span-7 order-1 lg:order-2 space-y-3">
+              <div class="inline-flex items-center space-x-2 bg-brand-goldChampagne text-brand-gold text-xs font-bold px-3.5 py-1 rounded-full border border-brand-gold/30">
+                <i class="fa-solid fa-hammer"></i>
+                <span>02 • RENOVATION</span>
+              </div>
+              <h3 class="text-2xl font-heading font-bold text-slate-900">งานรีโนเวท (Renovation)</h3>
+              <p class="text-xs sm:text-sm text-slate-600 leading-relaxed font-sans">
+                เชี่ยวชาญการปรับโฉมพื้นที่เดิม อาคารเก่า และห้องประชุมใหญ่ผู้บริหาร ให้สวยงาม ล้ำสมัย และรองรับเทคโนโลยีใหม่ โดยคำนึงถึงโครงสร้างอาคารเดิมเป็นสำคัญ
+              </p>
+              <ul class="space-y-2 text-xs text-slate-700 font-sans pt-2">
+                <li class="flex items-center space-x-2"><i class="fa-solid fa-check text-brand-gold"></i><span>รีโนเวทห้องประชุมผู้บริหารระดับสูง หน่วยงานราชการ (กทพ.) และองค์กรชั้นนำ</span></li>
+                <li class="flex items-center space-x-2"><i class="fa-solid fa-check text-brand-gold"></i><span>งานรีโนเวทร้านอาหารแบรนด์ดังในห้างสรรพสินค้า (Fast-Track Fit-Out)</span></li>
+                <li class="flex items-center space-x-2"><i class="fa-solid fa-check text-brand-gold"></i><span>ปรับปรุงระบบไฟฟ้า ระบบแอร์ และฟังก์ชั่นการใช้งานให้สมบูรณ์พร้อมเปิดดำเนินการ</span></li>
+              </ul>
+              <div class="pt-2">
+                <button onclick="openGallery('service-2')" class="inline-flex items-center space-x-2 text-xs font-heading font-semibold text-brand-gold hover:text-brand-goldDark bg-brand-goldChampagne px-4 py-2 rounded-full border border-brand-gold/30">
+                  <i class="fa-regular fa-images"></i>
+                  <span>ดูภาพงานรีโนเวท (4 รูป)</span>
+                  <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- SERVICE 03 -->
+          <div class="glass-card rounded-3xl p-8 border border-brand-gold/25 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+            <div class="lg:col-span-7 space-y-3">
+              <div class="inline-flex items-center space-x-2 bg-brand-goldChampagne text-brand-gold text-xs font-bold px-3.5 py-1 rounded-full border border-brand-gold/30">
+                <i class="fa-solid fa-couch"></i>
+                <span>03 • INTERIOR DESIGN</span>
+              </div>
+              <h3 class="text-2xl font-heading font-bold text-slate-900">งานตกแต่งภายใน (Interior Design)</h3>
+              <p class="text-xs sm:text-sm text-slate-600 leading-relaxed font-sans">
+                ออกแบบ ผลิต และติดตั้งงานตกแต่งภายในด้วยความประณีตสูง ตั้งแต่งานหอประชุม โรงละครขนาดใหญ่ ห้องโถงต้อนรับ ไปจนถึงงานบิ้วอินเฟอร์นิเจอร์สไตล์โมเดิร์นและวินเทจ
+              </p>
+              <ul class="space-y-2 text-xs text-slate-700 font-sans pt-2">
+                <li class="flex items-center space-x-2"><i class="fa-solid fa-check text-brand-gold"></i><span>งานติดตั้งเก้าอี้และพื้นที่ต่างระดับ (Stepped Auditorium Seating)</span></li>
+                <li class="flex items-center space-x-2"><i class="fa-solid fa-check text-brand-gold"></i><span>งานผนังดูดซับเสียง (Acoustic Slats &amp; Panels) ป้องกันเสียงก้องในห้องบรรยาย</span></li>
+                <li class="flex items-center space-x-2"><i class="fa-solid fa-check text-brand-gold"></i><span>งานฝ้าเพดานหลืบไฟ Indirect Light และเฟอร์นิเจอร์เคาน์เตอร์งานไม้สั่งทำพิเศษ</span></li>
+              </ul>
+              <div class="pt-2">
+                <button onclick="openGallery('service-3')" class="inline-flex items-center space-x-2 text-xs font-heading font-semibold text-brand-gold hover:text-brand-goldDark bg-brand-goldChampagne px-4 py-2 rounded-full border border-brand-gold/30">
+                  <i class="fa-regular fa-images"></i>
+                  <span>ดูภาพงานตกแต่งภายใน (5 รูป)</span>
+                  <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                </button>
+              </div>
+            </div>
+            <div class="lg:col-span-5 h-64 rounded-2xl overflow-hidden border border-brand-gold/30 shadow-md cursor-pointer group relative" onclick="openGallery('service-3')">
+              <img src="service-3.png" alt="งานตกแต่งภายใน" class="w-full h-full object-cover group-hover:scale-105 transition duration-500 crisp-img" onerror="this.src='https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=800&q=80'">
+              <div class="absolute inset-0 bg-black/30 group-hover:bg-black/10 transition flex items-center justify-center">
+                <span class="bg-white/95 text-slate-900 text-xs font-heading font-semibold px-4 py-2 rounded-full shadow-lg flex items-center space-x-2">
+                  <i class="fa-solid fa-magnifying-glass-plus text-brand-gold"></i>
+                  <span>คลิกดูแกลเลอรีภาพ</span>
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <!-- SERVICE 04 -->
+          <div class="glass-card rounded-3xl p-8 border border-brand-gold/25 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+            <div class="lg:col-span-5 order-2 lg:order-1 h-64 rounded-2xl overflow-hidden border border-brand-gold/30 shadow-md cursor-pointer group relative" onclick="openGallery('service-4')">
+              <img src="service-4.png" alt="งานระบบอาคาร" class="w-full h-full object-cover group-hover:scale-105 transition duration-500 crisp-img" onerror="this.src='https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=800&q=80'">
+              <div class="absolute inset-0 bg-black/30 group-hover:bg-black/10 transition flex items-center justify-center">
+                <span class="bg-white/95 text-slate-900 text-xs font-heading font-semibold px-4 py-2 rounded-full shadow-lg flex items-center space-x-2">
+                  <i class="fa-solid fa-magnifying-glass-plus text-brand-gold"></i>
+                  <span>คลิกดูแกลเลอรีภาพ</span>
+                </span>
+              </div>
+            </div>
+            <div class="lg:col-span-7 order-1 lg:order-2 space-y-3">
+              <div class="inline-flex items-center space-x-2 bg-brand-goldChampagne text-brand-gold text-xs font-bold px-3.5 py-1 rounded-full border border-brand-gold/30">
+                <i class="fa-solid fa-gears"></i>
+                <span>04 • SYSTEM (MEP)</span>
+              </div>
+              <h3 class="text-2xl font-heading font-bold text-slate-900">งานระบบ (System MEP)</h3>
+              <p class="text-xs sm:text-sm text-slate-600 leading-relaxed font-sans">
+                บริการออกแบบและติดตั้งงานระบบวิศวกรรมประกอบอาคาร ครบวงจร ได้รับการควบคุมและรับรองโดยวิศวกรไฟฟ้าผู้มีใบประกอบวิชาชีพ
+              </p>
+              <ul class="space-y-2 text-xs text-slate-700 font-sans pt-2">
+                <li class="flex items-center space-x-2"><i class="fa-solid fa-check text-brand-gold"></i><span>ระบบดับเพลิงอัตโนมัติ สปริงเกลอร์ (Fire Protection) และท่อตรวจจับควัน</span></li>
+                <li class="flex items-center space-x-2"><i class="fa-solid fa-check text-brand-gold"></i><span>ระบบปรับอากาศและระบายอากาศ (HVAC System) ท่อลมเปลือยสำหรับอาคารทันสมัย</span></li>
+                <li class="flex items-center space-x-2"><i class="fa-solid fa-check text-brand-gold"></i><span>ระบบไฟฟ้ากำลัง ไฟฟ้าสำรอง หม้อแปลง ตู้สวิตช์บอร์ด MDB และระบบกราวด์ป้องกันฟ้าผ่า</span></li>
+              </ul>
+              <div class="pt-2">
+                <button onclick="openGallery('service-4')" class="inline-flex items-center space-x-2 text-xs font-heading font-semibold text-brand-gold hover:text-brand-goldDark bg-brand-goldChampagne px-4 py-2 rounded-full border border-brand-gold/30">
+                  <i class="fa-regular fa-images"></i>
+                  <span>ดูภาพงานระบบวิศวกรรม (3 รูป)</span>
+                  <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- SERVICE 05 -->
+          <div class="glass-card rounded-3xl p-8 border border-brand-gold/25 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+            <div class="lg:col-span-7 space-y-3">
+              <div class="inline-flex items-center space-x-2 bg-brand-goldChampagne text-brand-gold text-xs font-bold px-3.5 py-1 rounded-full border border-brand-gold/30">
+                <i class="fa-solid fa-leaf"></i>
+                <span>05 • LANDSCAPE</span>
+              </div>
+              <h3 class="text-2xl font-heading font-bold text-slate-900">งานภูมิทัศน์ (Landscape)</h3>
+              <p class="text-xs sm:text-sm text-slate-600 leading-relaxed font-sans">
+                สร้างสรรค์บรรยากาศภายนอกอาคารด้วยงานปรับภูมิทัศน์ ผสมผสานธรรมชาติและงานโครงสร้าง Hardscape อย่างลงตัว เพิ่มคุณค่าและความสง่างามให้กับโครงการ
+              </p>
+              <ul class="space-y-2 text-xs text-slate-700 font-sans pt-2">
+                <li class="flex items-center space-x-2"><i class="fa-solid fa-check text-brand-gold"></i><span>ออกแบบและสร้างซุ้มอุโมงค์พรรณไม้ ทางเดินกลางแจ้ง และโครงเหล็กตกแต่ง</span></li>
+                <li class="flex items-center space-x-2"><i class="fa-solid fa-check text-brand-gold"></i><span>งานปูพื้นคอนกรีตพิมพ์ลาย บล็อกปูถนน ลานอเนกประสงค์ และขอบคันหิน</span></li>
+                <li class="flex items-center space-x-2"><i class="fa-solid fa-check text-brand-gold"></i><span>ติดตั้งระบบสปริงเกลอร์รดน้ำอัตโนมัติ บ่อน้ำพุ และงานไฟส่องสว่าง Landscape Lighting</span></li>
+              </ul>
+              <div class="pt-2">
+                <button onclick="openGallery('service-5')" class="inline-flex items-center space-x-2 text-xs font-heading font-semibold text-brand-gold hover:text-brand-goldDark bg-brand-goldChampagne px-4 py-2 rounded-full border border-brand-gold/30">
+                  <i class="fa-regular fa-images"></i>
+                  <span>ดูภาพงานภูมิทัศน์ (3 รูป)</span>
+                  <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                </button>
+              </div>
+            </div>
+            <div class="lg:col-span-5 h-64 rounded-2xl overflow-hidden border border-brand-gold/30 shadow-md cursor-pointer group relative" onclick="openGallery('service-5')">
+              <img src="service-5.png" alt="งานภูมิทัศน์" class="w-full h-full object-cover group-hover:scale-105 transition duration-500 crisp-img" onerror="this.src='https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?auto=format&fit=crop&w=800&q=80'">
+              <div class="absolute inset-0 bg-black/30 group-hover:bg-black/10 transition flex items-center justify-center">
+                <span class="bg-white/95 text-slate-900 text-xs font-heading font-semibold px-4 py-2 rounded-full shadow-lg flex items-center space-x-2">
+                  <i class="fa-solid fa-magnifying-glass-plus text-brand-gold"></i>
+                  <span>คลิกดูแกลเลอรีภาพ</span>
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <!-- SERVICE 06 -->
+          <div class="glass-card rounded-3xl p-8 border border-brand-gold/25 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+            <div class="lg:col-span-5 order-2 lg:order-1 h-64 rounded-2xl overflow-hidden border border-brand-gold/30 shadow-md cursor-pointer group relative" onclick="openGallery('service-6')">
+              <img src="service-6.png" alt="งานถมดิน" class="w-full h-full object-cover group-hover:scale-105 transition duration-500 crisp-img" onerror="this.src='https://images.unsplash.com/photo-1578575437130-527eed3abbec?auto=format&fit=crop&w=800&q=80'">
+              <div class="absolute inset-0 bg-black/30 group-hover:bg-black/10 transition flex items-center justify-center">
+                <span class="bg-white/95 text-slate-900 text-xs font-heading font-semibold px-4 py-2 rounded-full shadow-lg flex items-center space-x-2">
+                  <i class="fa-solid fa-magnifying-glass-plus text-brand-gold"></i>
+                  <span>คลิกดูแกลเลอรีภาพ</span>
+                </span>
+              </div>
+            </div>
+            <div class="lg:col-span-7 order-1 lg:order-2 space-y-3">
+              <div class="inline-flex items-center space-x-2 bg-brand-goldChampagne text-brand-gold text-xs font-bold px-3.5 py-1 rounded-full border border-brand-gold/30">
+                <i class="fa-solid fa-truck-monster"></i>
+                <span>06 • EARTHWORK</span>
+              </div>
+              <h3 class="text-2xl font-heading font-bold text-slate-900">งานถมดิน (Earthwork)</h3>
+              <p class="text-xs sm:text-sm text-slate-600 leading-relaxed font-sans">
+                เตรียมความพร้อมของพื้นที่ด้วยงานถมดิน บดอัดดินตามค่ามาตรฐานวิศวกรรม เพื่อเป็นรากฐานที่แข็งแกร่งสำหรับงานก่อสร้างอาคาร ถนน และโรงงานอุตสาหกรรม
+              </p>
+              <ul class="space-y-2 text-xs text-slate-700 font-sans pt-2">
+                <li class="flex items-center space-x-2"><i class="fa-solid fa-check text-brand-gold"></i><span>งานเคลียร์ริ่งพื้นที่ ขุดเปิดหน้าดิน และปรับระดับพื้นที่ให้ได้ระดับอ้างอิง (Survey Level)</span></li>
+                <li class="flex items-center space-x-2"><i class="fa-solid fa-check text-brand-gold"></i><span>จัดส่งดินลูกรัง หินคลุก ทราย พร้อมบดอัดแน่นด้วยรถบดสั่นสะเทือนหนัก</span></li>
+                <li class="flex items-center space-x-2"><i class="fa-solid fa-check text-brand-gold"></i><span>งานขุดและวางท่อระบายน้ำ คสล. พร้อมบ่อพัก ป้องกันน้ำท่วมขังและดินสไลด์</span></li>
+              </ul>
+              <div class="pt-2">
+                <button onclick="openGallery('service-6')" class="inline-flex items-center space-x-2 text-xs font-heading font-semibold text-brand-gold hover:text-brand-goldDark bg-brand-goldChampagne px-4 py-2 rounded-full border border-brand-gold/30">
+                  <i class="fa-regular fa-images"></i>
+                  <span>ดูภาพงานถมดิน (3 รูป)</span>
+                  <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </section>
+
+      <!-- ================= 3. PAGE: PROJECTS ================= -->
+      <section id="page-projects" class="page-view space-y-10">
+        
+        <div class="glass-card rounded-[2rem] p-8 sm:p-12 text-center border border-brand-gold/30">
+          <span class="font-display text-[10px] tracking-[0.25em] uppercase text-brand-gold font-bold">PORTFOLIO SHOWCASE</span>
+          <h1 class="text-3xl sm:text-4xl font-heading font-extrabold text-brand-dark mt-2">ผลงานและโครงการที่ส่งมอบสำเร็จ</h1>
+          <p class="text-slate-600 text-xs sm:text-sm max-w-2xl mx-auto mt-3 font-sans">
+            คลิกที่การ์ดผลงานเพื่อดู <strong>แกลเลอรีภาพหลายมุมมอง และขั้นตอนก่อน-หลังดำเนินงาน</strong>
+          </p>
+
+          <!-- Filter Pill Tabs -->
+          <div class="flex flex-wrap justify-center gap-2 mt-6">
+            <button onclick="filterProjects('all')" class="filter-btn active bg-brand-gold text-white text-xs font-heading font-semibold px-5 py-2.5 rounded-full transition shadow-sm" data-filter="all">ทั้งหมด</button>
+            <button onclick="filterProjects('interior')" class="filter-btn bg-white hover:bg-slate-50 text-slate-700 text-xs font-heading font-semibold px-5 py-2.5 rounded-full transition border border-brand-gold/25" data-filter="interior">งานรีโนเวท &amp; ตกแต่งภายใน</button>
+            <button onclick="filterProjects('gov')" class="filter-btn bg-white hover:bg-slate-50 text-slate-700 text-xs font-heading font-semibold px-5 py-2.5 rounded-full transition border border-brand-gold/25" data-filter="gov">งานองค์กร &amp; ภาครัฐ</button>
+            <button onclick="filterProjects('struct')" class="filter-btn bg-white hover:bg-slate-50 text-slate-700 text-xs font-heading font-semibold px-5 py-2.5 rounded-full transition border border-brand-gold/25" data-filter="struct">งานโครงสร้าง &amp; สถาปัตย์</button>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          
+          <!-- Item 1 -->
+          <div class="project-card interior glass-card rounded-3xl overflow-hidden border border-brand-gold/25 hover:shadow-xl transition cursor-pointer group" onclick="openGallery('proj-bbq')">
+            <div class="h-64 overflow-hidden relative">
+              <img src="img-12.png" alt="Bar B Q Plaza" class="w-full h-full object-cover group-hover:scale-105 transition duration-500 crisp-img" onerror="this.src='https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=800&q=80'">
+              <span class="absolute top-3 right-3 bg-white/90 text-slate-900 text-[10px] font-heading font-bold px-2.5 py-1 rounded-full shadow-sm flex items-center space-x-1">
+                <i class="fa-regular fa-images text-brand-gold"></i>
+                <span>คลิกดูรูปเพิ่มเติม</span>
+              </span>
+            </div>
+            <div class="p-6">
+              <span class="text-brand-gold text-xs font-heading font-semibold">โครงการธุรกิจค้าปลีก/ร้านอาหาร</span>
+              <h3 class="text-lg font-heading font-bold text-slate-900 mt-1 group-hover:text-brand-gold transition">งานรีโนเวทร้าน Bar B Q Plaza</h3>
+              <p class="text-slate-500 text-xs mt-2 line-clamp-2">ปรับปรุงร้านอาหารเต็มรูปแบบ งานระบบดูดควันเตาปิ้งย่าง งานผนังกราฟิกแบรนด์ และที่นั่งโซฟาบิวท์อิน</p>
+            </div>
+          </div>
+
+          <!-- Item 2 -->
+          <div class="project-card gov interior glass-card rounded-3xl overflow-hidden border border-brand-gold/25 hover:shadow-xl transition cursor-pointer group" onclick="openGallery('proj-exat-lobby')">
+            <div class="h-64 overflow-hidden relative">
+              <img src="img-11.png" alt="โถงต้อนรับ กทพ." class="w-full h-full object-cover group-hover:scale-105 transition duration-500 crisp-img" onerror="this.src='https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=800&q=80'">
+              <span class="absolute top-3 right-3 bg-white/90 text-slate-900 text-[10px] font-heading font-bold px-2.5 py-1 rounded-full shadow-sm flex items-center space-x-1">
+                <i class="fa-regular fa-images text-brand-gold"></i>
+                <span>คลิกดูรูปเพิ่มเติม</span>
+              </span>
+            </div>
+            <div class="p-6">
+              <span class="text-brand-gold text-xs font-heading font-semibold">โครงการภาครัฐ</span>
+              <h3 class="text-lg font-heading font-bold text-slate-900 mt-1 group-hover:text-brand-gold transition">โถงต้อนรับ การทางพิเศษฯ</h3>
+              <p class="text-slate-500 text-xs mt-2 line-clamp-2">ตกแต่งโถง Atrium เพดานสูงพิเศษ ผนังโลโก้อะลูมิเนียมคอมโพสิต และติดตั้งระบบไฟส่องสว่างระดับพรีเมียม</p>
+            </div>
+          </div>
+
+          <!-- Item 3 -->
+          <div class="project-card gov interior glass-card rounded-3xl overflow-hidden border border-brand-gold/25 hover:shadow-xl transition cursor-pointer group" onclick="openGallery('proj-exat-meeting')">
+            <div class="h-64 overflow-hidden relative">
+              <img src="img-1.png" alt="ห้องประชุม กทพ." class="w-full h-full object-cover group-hover:scale-105 transition duration-500 crisp-img" onerror="this.src='https://images.unsplash.com/photo-1431540015161-0bf868a2d407?auto=format&fit=crop&w=800&q=80'">
+              <span class="absolute top-3 right-3 bg-white/90 text-slate-900 text-[10px] font-heading font-bold px-2.5 py-1 rounded-full shadow-sm flex items-center space-x-1">
+                <i class="fa-regular fa-images text-brand-gold"></i>
+                <span>คลิกดูรูปเพิ่มเติม</span>
+              </span>
+            </div>
+            <div class="p-6">
+              <span class="text-brand-gold text-xs font-heading font-semibold">โครงการภาครัฐ</span>
+              <h3 class="text-lg font-heading font-bold text-slate-900 mt-1 group-hover:text-brand-gold transition">ห้องประชุมใหญ่ การทางพิเศษฯ</h3>
+              <p class="text-slate-500 text-xs mt-2 line-clamp-2">งานออกแบบติดตั้งระบบฝ้าเพดานระแนงกันสะท้อนเสียง งานเดินท่อสายสัญญาณไมโครโฟนประชุมทุกที่นั่ง</p>
+            </div>
+          </div>
+
+          <!-- Item 4 -->
+          <div class="project-card interior glass-card rounded-3xl overflow-hidden border border-brand-gold/25 hover:shadow-xl transition cursor-pointer group" onclick="openGallery('proj-pafe')">
+            <div class="h-64 overflow-hidden relative">
+              <img src="img-5.png" alt="มูลนิธิอาสาเพื่อนพึ่ง(ภาฯ)" class="w-full h-full object-cover group-hover:scale-105 transition duration-500 crisp-img" onerror="this.src='https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=800&q=80'">
+              <span class="absolute top-3 right-3 bg-white/90 text-slate-900 text-[10px] font-heading font-bold px-2.5 py-1 rounded-full shadow-sm flex items-center space-x-1">
+                <i class="fa-regular fa-images text-brand-gold"></i>
+                <span>คลิกดูรูปเพิ่มเติม</span>
+              </span>
+            </div>
+            <div class="p-6">
+              <span class="text-brand-gold text-xs font-heading font-semibold">งานออกแบบและตกแต่ง</span>
+              <h3 class="text-lg font-heading font-bold text-slate-900 mt-1 group-hover:text-brand-gold transition">มูลนิธิอาสาเพื่อนพึ่ง(ภาฯ)ยามยาก</h3>
+              <p class="text-slate-500 text-xs mt-2 line-clamp-2">งานตกแต่งด้วยความประณีต ยกระดับให้มูลนิธิมีความสวยงามร่วมสมัย</p>
+            </div>
+          </div>
+
+          <!-- Item 5 -->
+          <div class="project-card struct glass-card rounded-3xl overflow-hidden border border-brand-gold/25 hover:shadow-xl transition cursor-pointer group" onclick="openGallery('proj-facade')">
+            <div class="h-64 overflow-hidden relative">
+              <img src="img-6.png" alt="Curved Steel Facade" class="w-full h-full object-cover group-hover:scale-105 transition duration-500 crisp-img" onerror="this.src='https://images.unsplash.com/photo-1541888946425-d0fbb186156f?auto=format&fit=crop&w=800&q=80'">
+              <span class="absolute top-3 right-3 bg-white/90 text-slate-900 text-[10px] font-heading font-bold px-2.5 py-1 rounded-full shadow-sm flex items-center space-x-1">
+                <i class="fa-regular fa-images text-brand-gold"></i>
+                <span>คลิกดูรูปเพิ่มเติม</span>
+              </span>
+            </div>
+            <div class="p-6">
+              <span class="text-brand-gold text-xs font-heading font-semibold">งานวิศวกรรมโครงสร้าง</span>
+              <h3 class="text-lg font-heading font-bold text-slate-900 mt-1 group-hover:text-brand-gold transition">โครงสร้างเหล็กดัดโค้ง ฟาซาดอาคาร</h3>
+              <p class="text-slate-500 text-xs mt-2 line-clamp-2">งานประกอบและติดตั้งโครงถักเหล็กดัดโค้งรูปทรงเรขาคณิต สำหรับรองรับแผง Curtain Wall ด้านหน้าอาคาร</p>
+            </div>
+          </div>
+
+          <!-- Item 6 -->
+          <div class="project-card struct glass-card rounded-3xl overflow-hidden border border-brand-gold/25 hover:shadow-xl transition cursor-pointer group" onclick="openGallery('proj-landmark')">
+            <div class="h-64 overflow-hidden relative">
+              <img src="img-3.png" alt="Landmark Building" class="w-full h-full object-cover group-hover:scale-105 transition duration-500 crisp-img" onerror="this.src='https://images.unsplash.com/photo-1541971875076-8f970d573be6?auto=format&fit=crop&w=800&q=80'">
+              <span class="absolute top-3 right-3 bg-white/90 text-slate-900 text-[10px] font-heading font-bold px-2.5 py-1 rounded-full shadow-sm flex items-center space-x-1">
+                <i class="fa-regular fa-images text-brand-gold"></i>
+                <span>คลิกดูรูปเพิ่มเติม</span>
+              </span>
+            </div>
+            <div class="p-6">
+              <span class="text-brand-gold text-xs font-heading font-semibold">งานสถาปัตยกรรมและภูมิทัศน์</span>
+              <h3 class="text-lg font-heading font-bold text-slate-900 mt-1 group-hover:text-brand-gold transition">อาคารแลนด์มาร์คและภูมิทัศน์</h3>
+              <p class="text-slate-500 text-xs mt-2 line-clamp-2">งานโครงสร้างหลังคาโค้งกระจกสะท้อนความร้อน งานเทพื้นลานกว้าง ระบบสปริงเกลอร์และบ่อน้ำพุจัดสวน</p>
+            </div>
+          </div>
+
+          <!-- Item 7 -->
+          <div class="project-card interior glass-card rounded-3xl overflow-hidden border border-brand-gold/25 hover:shadow-xl transition cursor-pointer group" onclick="openGallery('proj-creative')">
+            <div class="h-64 overflow-hidden relative">
+              <img src="img-2.png" alt="Creative Waiting Area" class="w-full h-full object-cover group-hover:scale-105 transition duration-500 crisp-img" onerror="this.src='https://images.unsplash.com/photo-1513151233558-d860c5398176?auto=format&fit=crop&w=800&q=80'">
+              <span class="absolute top-3 right-3 bg-white/90 text-slate-900 text-[10px] font-heading font-bold px-2.5 py-1 rounded-full shadow-sm flex items-center space-x-1">
+                <i class="fa-regular fa-images text-brand-gold"></i>
+                <span>คลิกดูรูปเพิ่มเติม</span>
+              </span>
+            </div>
+            <div class="p-6">
+              <span class="text-brand-gold text-xs font-heading font-semibold">งานตกแต่งพื้นที่พิเศษ</span>
+              <h3 class="text-lg font-heading font-bold text-slate-900 mt-1 group-hover:text-brand-gold transition">โซนพักผ่อนและพื้นที่สันทนาการ</h3>
+              <p class="text-slate-500 text-xs mt-2 line-clamp-2">งานตกแต่งเพดานดัดโค้งต่อเนื่องกับผนัง งานแผงไฟวงกลมซ่อนแสง LED Indirect Light และที่นั่งเบาะหนังบิวท์อิน</p>
+            </div>
+          </div>
+
+        </div>
+
+      </section>
+
+      <!-- ================= 4. PAGE: ABOUT ================= -->
+      <section id="page-about" class="page-view space-y-12">
+        
+        <div class="glass-card rounded-[2rem] p-8 sm:p-12 text-center border border-brand-gold/30">
+          <span class="font-display text-[10px] tracking-[0.25em] uppercase text-brand-gold font-bold">ABOUT KVN PLUS</span>
+          <h1 class="text-3xl sm:text-4xl font-heading font-extrabold text-brand-dark mt-2">คิดครบ สร้างจบ ด้วยมาตรฐานวิศวกรรม</h1>
+          <p class="text-slate-600 text-xs sm:text-sm max-w-2xl mx-auto mt-3 font-sans">
+            ประสบการณ์สั่งสมยาวนานกว่า 25 ปี สู่ผู้นำ “One Stop Construction Solution”
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+          <div class="lg:col-span-7 glass-card rounded-3xl p-8 border border-brand-gold/25 space-y-4 font-sans">
+            <span class="text-brand-gold font-heading font-bold text-xs uppercase tracking-wider bg-brand-goldChampagne px-3.5 py-1 rounded-full border border-brand-gold/30">
+              Our Journey • เส้นทางความเป็นมา
+            </span>
+            <h2 class="text-2xl sm:text-3xl font-heading font-bold text-slate-900 leading-tight">
+              จากจุดเริ่มต้นด้านงานป้าย สู่ผู้นำงานก่อสร้างครบวงจร
+            </h2>
+            <div class="space-y-3 text-xs sm:text-sm text-slate-600 leading-relaxed">
+              <p>
+                <strong>บริษัท เค.วี.เอ็น แอ็ดเวอร์ไทซิ่ง จำกัด</strong> ก่อตั้งขึ้นเมื่อวันที่ <strong>10 กรกฎาคม พ.ศ. 2544</strong> โดย <strong>คุณณฐภร เสริมศรี</strong> เริ่มต้นจากธุรกิจด้านป้ายโฆษณาและงานสื่อสารการตลาด ด้วยความมุ่งมั่นในการสร้างสรรค์ผลงานที่มีคุณภาพ และตอบสนองความต้องการของลูกค้าอย่างแท้จริง
+              </p>
+              <p>
+                จากประสบการณ์และความไว้วางใจที่ได้รับอย่างต่อเนื่อง บริษัทได้เล็งเห็นถึงโอกาสในการเติบโต จึงพัฒนาศักยภาพ บุคลากร และขยายขอบเขตการให้บริการสู่ <strong>งานก่อสร้าง งานรีโนเวท งานตกแต่งภายใน งานระบบ งานปรับภูมิทัศน์ และงานถมดิน</strong> เพื่อรองรับโครงการได้อย่างครอบคลุมมากยิ่งขึ้น
+              </p>
+              <p>
+                ปัจจุบัน ด้วยประสบการณ์ที่สั่งสมมายาวนานกว่า <strong>25 ปี</strong> บริษัทได้เปลี่ยนชื่อเป็น <strong>บริษัท เค.วี.เอ็น พลัส จำกัด (KVN Plus Co., Ltd.)</strong> ภายใต้แนวคิด <span class="text-brand-gold font-bold">“One Stop Construction Solution”</span> ดูแลโครงการได้ตั้งแต่การให้คำปรึกษา สำรวจ ออกแบบ ก่อสร้าง ไปจนถึงส่งมอบงานและบริการหลังการขาย
+              </p>
+            </div>
+
+            <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-2">
+              <div class="p-3 bg-white rounded-xl border border-brand-gold/20 text-center">
+                <i class="fa-solid fa-handshake-simple text-brand-gold mb-1"></i>
+                <div class="text-xs font-heading font-bold text-slate-800">ความซื่อสัตย์</div>
+              </div>
+              <div class="p-3 bg-white rounded-xl border border-brand-gold/20 text-center">
+                <i class="fa-solid fa-magnifying-glass text-brand-gold mb-1"></i>
+                <div class="text-xs font-heading font-bold text-slate-800">โปร่งใส ตรวจสอบได้</div>
+              </div>
+              <div class="p-3 bg-white rounded-xl border border-brand-gold/20 text-center">
+                <i class="fa-solid fa-shield-halved text-brand-gold mb-1"></i>
+                <div class="text-xs font-heading font-bold text-slate-800">มีความรับผิดชอบ</div>
+              </div>
+              <div class="p-3 bg-white rounded-xl border border-brand-gold/20 text-center">
+                <i class="fa-solid fa-clock text-brand-gold mb-1"></i>
+                <div class="text-xs font-heading font-bold text-slate-800">ตรงต่อเวลา</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="lg:col-span-5 glass-card rounded-3xl p-6 border border-brand-gold/25 text-center">
+            <div class="rounded-2xl overflow-hidden mb-4 shadow-md bg-slate-100 h-64">
+              <img src="img-4.png" alt="สำนักงานใหญ่ KVN Plus" class="w-full h-full object-cover crisp-img" onerror="this.src='https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=800&q=80'">
+            </div>
+            <span class="text-brand-gold font-display font-bold text-[10px] uppercase tracking-widest">HEADQUARTERS</span>
+            <h4 class="text-base font-heading font-bold text-slate-900 mt-1">บริษัท เค.วี.เอ็น พลัส จำกัด</h4>
+            <p class="text-xs text-slate-500 mt-1">4/5 หมู่ 19 ต.ลำลูกกา อ.ลำลูกกา จ.ปทุมธานี 12150</p>
+          </div>
+        </div>
+
+        <!-- 3 Professional Licenses Cards -->
+        <div class="space-y-6">
+          <div class="text-center max-w-2xl mx-auto">
+            <span class="text-brand-gold font-display text-[10px] uppercase tracking-[0.25em] font-bold">PROFESSIONAL LICENSES</span>
+            <h2 class="text-2xl sm:text-3xl font-heading font-extrabold text-slate-900 mt-1">ทีมงานวิศวกรและที่ปรึกษากฎหมาย</h2>
+            <p class="text-xs text-slate-500 mt-2 font-sans">
+              ควบคุมงานโดยผู้ได้รับใบอนุญาตประกอบวิชาชีพควบคุมตามกฎหมาย <br>
+              <span class="text-brand-gold font-medium">(คลิกที่ภาพเพื่อขยายดูรายละเอียดใบอนุญาตฉบับจริง)</span>
+            </p>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            
+            <!-- Civil Engineer -->
+            <div class="glass-card rounded-3xl p-6 border border-brand-gold/25 flex flex-col justify-between">
+              <div>
+                <div class="relative w-full rounded-2xl overflow-hidden border-2 border-brand-gold/30 shadow-md mb-4 bg-slate-50 cursor-pointer group" onclick="openSingleImage('team-civil.png', 'คุณรุจจกรณ์ เปรมวิทยพัชร์ (ฝ่ายวิศวกรโยธา)', 'ใบอนุญาตประกอบวิชาชีพวิศวกรรมควบคุม เลขทะเบียน สย.11145 ระดับสามัญวิศวกร สาขาโยธา')">
+                  <div class="aspect-[1.18/1] w-full">
+                    <img src="team-civil.png" alt="คุณรุจจกรณ์ เปรมวิทยพัชร์ วิศวกรโยธา" class="w-full h-full object-contain p-1 crisp-img group-hover:scale-105 transition duration-300" onerror="this.src='https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=600&q=80'">
+                  </div>
+                  <div class="absolute inset-0 bg-brand-dark/50 opacity-0 group-hover:opacity-100 flex items-center justify-center transition">
+                    <span class="bg-white text-slate-900 text-[11px] font-heading font-bold px-3 py-1.5 rounded-full shadow-md flex items-center space-x-1">
+                      <i class="fa-solid fa-magnifying-glass-plus text-brand-gold"></i>
+                      <span>คลิกดูบัตรเต็ม</span>
+                    </span>
+                  </div>
+                </div>
+
+                <div class="text-center">
+                  <span class="inline-block text-[11px] font-heading font-bold text-blue-700 bg-blue-50 border border-blue-200 px-3 py-1 rounded-full mb-2">
+                    ฝ่ายวิศวกรโยธา
+                  </span>
+                  <h3 class="text-base font-heading font-bold text-slate-900">คุณรุจจกรณ์ เปรมวิทยพัชร์</h3>
+                  <p class="text-xs text-brand-gold font-semibold mt-1">กว. เลขทะเบียน สย. 11145 (สามัญวิศวกร)</p>
+                </div>
+              </div>
+              <p class="text-[11px] text-slate-500 mt-4 pt-4 border-t border-brand-gold/15 font-sans leading-relaxed">
+                คำนวณและควบคุมงานวิศวกรรมโครงสร้าง ฐานราก เสาเข็ม และความแข็งแรงปลอดภัยของอาคาร
+              </p>
+            </div>
+
+            <!-- Electrical Engineer -->
+            <div class="glass-card rounded-3xl p-6 border border-brand-gold/25 flex flex-col justify-between">
+              <div>
+                <div class="relative w-full rounded-2xl overflow-hidden border-2 border-brand-gold/30 shadow-md mb-4 bg-slate-50 cursor-pointer group" onclick="openSingleImage('team-electrical.png', 'คุณสุรสิทธิ์ สถาวรสมิตร (ฝ่ายวิศวกรไฟฟ้า)', 'ใบอนุญาตประกอบวิชาชีพวิศวกรรมควบคุม เลขทะเบียน ภฟก.23138 สาขาไฟฟ้ากำลัง')">
+                  <div class="aspect-[1.18/1] w-full">
+                    <img src="team-electrical.png" alt="คุณสุรสิทธิ์ สถาวรสมิตร วิศวกรไฟฟ้า" class="w-full h-full object-contain p-1 crisp-img group-hover:scale-105 transition duration-300" onerror="this.src='https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=600&q=80'">
+                  </div>
+                  <div class="absolute inset-0 bg-brand-dark/50 opacity-0 group-hover:opacity-100 flex items-center justify-center transition">
+                    <span class="bg-white text-slate-900 text-[11px] font-heading font-bold px-3 py-1.5 rounded-full shadow-md flex items-center space-x-1">
+                      <i class="fa-solid fa-magnifying-glass-plus text-brand-gold"></i>
+                      <span>คลิกดูบัตรเต็ม</span>
+                    </span>
+                  </div>
+                </div>
+
+                <div class="text-center">
+                  <span class="inline-block text-[11px] font-heading font-bold text-emerald-700 bg-emerald-50 border border-emerald-200 px-3 py-1 rounded-full mb-2">
+                    ฝ่ายวิศวกรไฟฟ้า
+                  </span>
+                  <h3 class="text-base font-heading font-bold text-slate-900">คุณสุรสิทธิ์ สถาวรสมิตร</h3>
+                  <p class="text-xs text-brand-gold font-semibold mt-1">กว. เลขทะเบียน ภฟก 23138 (สาขาไฟฟ้ากำลัง)</p>
+                </div>
+              </div>
+              <p class="text-[11px] text-slate-500 mt-4 pt-4 border-t border-brand-gold/15 font-sans leading-relaxed">
+                ออกแบบ วางระบบไฟฟ้ากำลัง ไฟฟ้าสื่อสาร หม้อแปลง และระบบความปลอดภัยไฟฟ้าอาคารครบวงจร
+              </p>
+            </div>
+
+            <!-- Legal Counsel -->
+            <div class="glass-card rounded-3xl p-6 border border-brand-gold/25 flex flex-col justify-between">
+              <div>
+                <div class="relative w-full rounded-2xl overflow-hidden border-2 border-brand-gold/30 shadow-md mb-4 bg-slate-50 cursor-pointer group" onclick="openSingleImage('team-lawyer.png', 'คุณธีรวัฒน์ เหมมะรา (ฝ่ายนิติกร)', 'ใบอนุญาตให้เป็นทนายความ เลขที่ 1098/2537 ดูแลกฎหมายก่อสร้างและสัญญา')">
+                  <div class="aspect-[1.18/1] w-full">
+                    <img src="team-lawyer.png" alt="คุณธีรวัฒน์ เหมมะรา ฝ่ายนิติกร" class="w-full h-full object-contain p-1 crisp-img group-hover:scale-105 transition duration-300" onerror="this.src='https://images.unsplash.com/photo-1556157382-97eda2d62296?auto=format&fit=crop&w=600&q=80'">
+                  </div>
+                  <div class="absolute inset-0 bg-brand-dark/50 opacity-0 group-hover:opacity-100 flex items-center justify-center transition">
+                    <span class="bg-white text-slate-900 text-[11px] font-heading font-bold px-3 py-1.5 rounded-full shadow-md flex items-center space-x-1">
+                      <i class="fa-solid fa-magnifying-glass-plus text-brand-gold"></i>
+                      <span>คลิกดูบัตรเต็ม</span>
+                    </span>
+                  </div>
+                </div>
+
+                <div class="text-center">
+                  <span class="inline-block text-[11px] font-heading font-bold text-amber-800 bg-amber-50 border border-amber-200 px-3 py-1 rounded-full mb-2">
+                    ฝ่ายนิติกร
+                  </span>
+                  <h3 class="text-base font-heading font-bold text-slate-900">คุณธีรวัฒน์ เหมมะรา</h3>
+                  <p class="text-xs text-brand-gold font-semibold mt-1">ใบอนุญาตให้เป็นทนายความ เลขที่ 1098/2537</p>
+                </div>
+              </div>
+              <p class="text-[11px] text-slate-500 mt-4 pt-4 border-t border-brand-gold/15 font-sans leading-relaxed">
+                ดูแลความถูกต้องด้านระเบียบกฎหมายก่อสร้าง สัญญาจ้าง และมาตรฐานความโปร่งใสของโครงการ
+              </p>
+            </div>
+
+          </div>
+        </div>
+
+      </section>
+
+      <!-- ================= 5. PAGE: CONTACT & MAP ================= -->
+      <section id="page-contact" class="page-view space-y-10">
+        
+        <div class="glass-card rounded-[2rem] p-8 sm:p-12 text-center border border-brand-gold/30">
+          <span class="font-display text-[10px] tracking-[0.25em] uppercase text-brand-gold font-bold">GET IN TOUCH</span>
+          <h1 class="text-3xl sm:text-4xl font-heading font-extrabold text-brand-dark mt-2">ติดต่อเราและขอใบเสนอราคา (BOQ)</h1>
+          <p class="text-slate-600 text-xs sm:text-sm max-w-2xl mx-auto mt-3 font-sans">
+            ยินดีให้คำปรึกษาทุกโครงการ ไม่ว่าจะเป็นงานสร้างใหม่ รีโนเวท หรืองานโยธา
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+          
+          <div class="lg:col-span-5 space-y-6">
+            
+            <div class="glass-card rounded-3xl p-6 border border-brand-gold/25 space-y-4">
+              <h3 class="text-lg font-heading font-bold text-slate-900">บริษัท เค.วี.เอ็น พลัส จำกัด</h3>
+              
+              <!-- Address & Google Map Link -->
+              <div class="flex items-start space-x-3.5 p-3.5 bg-white rounded-2xl border border-brand-gold/20">
+                <div class="w-10 h-10 rounded-xl bg-brand-goldChampagne text-brand-gold flex items-center justify-center shrink-0">
+                  <i class="fa-solid fa-location-dot"></i>
+                </div>
+                <div class="flex-grow">
+                  <strong class="block text-slate-900 text-xs font-heading font-bold mb-0.5">สำนักงานใหญ่</strong>
+                  <span class="text-slate-600 text-xs leading-relaxed block">
+                    4/5 หมู่ 19 ตำบลลำลูกกา อำเภอลำลูกกา จังหวัดปทุมธานี 12150
+                  </span>
+                  <div class="mt-2.5">
+                    <a href="https://maps.google.com/?q=4/5+หมู่+19+ตำบลลำลูกกา+อำเภอลำลูกกา+จังหวัดปทุมธานี+12150" target="_blank" class="inline-flex items-center space-x-1.5 text-xs font-heading font-semibold text-brand-gold hover:text-brand-goldDark bg-brand-goldChampagne px-3 py-1.5 rounded-full border border-brand-gold/30 transition">
+                      <i class="fa-solid fa-map-location-dot"></i>
+                      <span>เปิดแผนที่ Google Maps นำทาง</span>
+                      <i class="fa-solid fa-arrow-up-right-from-square text-[9px]"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Phone Numbers -->
+              <div class="flex items-start space-x-3.5 p-3.5 bg-white rounded-2xl border border-brand-gold/20">
+                <div class="w-10 h-10 rounded-xl bg-brand-goldChampagne text-brand-gold flex items-center justify-center shrink-0">
+                  <i class="fa-solid fa-phone"></i>
+                </div>
+                <div>
+                  <strong class="block text-slate-900 text-xs font-heading font-bold mb-1">เบอร์โทรศัพท์ติดต่อ</strong>
+                  <div class="space-y-1 text-xs">
+                    <div><a href="tel:0889874539" class="text-slate-700 hover:text-brand-gold font-bold">088-987-4539 (คุณฝน)</a></div>
+                    <div><a href="tel:021010122" class="text-slate-600 hover:text-brand-gold">02-101-0122 (สำนักงานใหญ่)</a></div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- LINE Contact & QR -->
+              <div class="p-4 bg-emerald-50/80 border border-emerald-200 rounded-2xl">
+                <div class="flex items-center space-x-3 mb-3">
+                  <i class="fa-brands fa-line text-brand-line text-2xl"></i>
+                  <div>
+                    <h4 class="font-heading font-bold text-slate-900 text-xs">LINE Official / ปรึกษาด่วน</h4>
+                    <p class="text-[11px] text-slate-600">ID LINE: <strong class="text-emerald-800">KVN PLUS</strong></p>
+                  </div>
+                </div>
+                <div class="flex items-center space-x-4 bg-white p-3 rounded-xl border border-emerald-100">
+                  <img src="https://api.qrserver.com/v1/create-qr-code/?size=140x140&data=https://line.me/ti/p/-rOGw3Ouoj" alt="LINE QR Code" class="w-16 h-16 rounded-lg border border-slate-200 shrink-0 crisp-img">
+                  <div>
+                    <p class="text-[11px] text-slate-500 mb-1.5">สแกน QR Code หรือคลิกปุ่มเพื่อแชททันที</p>
+                    <a href="https://line.me/ti/p/-rOGw3Ouoj" target="_blank" class="inline-flex items-center space-x-1.5 bg-brand-line hover:bg-emerald-600 text-white text-[11px] font-heading font-medium px-3 py-1.5 rounded-full shadow-sm transition">
+                      <i class="fa-brands fa-line"></i>
+                      <span>เพิ่มเพื่อนใน LINE</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Facebook -->
+              <div class="flex items-center justify-between p-3.5 bg-white rounded-2xl border border-brand-gold/20">
+                <div class="flex items-center space-x-3">
+                  <div class="w-9 h-9 rounded-xl bg-blue-50 text-blue-600 flex items-center justify-center text-base shrink-0">
+                    <i class="fa-brands fa-facebook-f"></i>
+                  </div>
+                  <div>
+                    <strong class="block text-slate-900 text-xs font-heading font-semibold">Facebook Fanpage</strong>
+                    <span class="text-slate-500 text-[11px]">บจ เค วี เอ็น แอ็ดเวอร์ไทซิ่ง</span>
+                  </div>
+                </div>
+                <a href="https://www.facebook.com/profile.php?id=100054273157568" target="_blank" class="text-xs font-heading font-medium text-blue-600 hover:text-blue-700 bg-blue-50 px-3 py-1.5 rounded-full border border-blue-100">
+                  เปิดเพจ
+                </a>
+              </div>
+
+            </div>
+
+            <!-- Embedded Google Map Frame -->
+            <div class="glass-card rounded-3xl overflow-hidden border border-brand-gold/25 p-2 shadow-sm">
+              <iframe 
+                src="https://maps.google.com/maps?q=4/5+หมู่+19+ตำบลลำลูกกา+อำเภอลำลูกกา+จังหวัดปทุมธานี+12150&t=&z=14&ie=UTF8&iwloc=&output=embed" 
+                class="w-full h-52 rounded-2xl border-0" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+              </iframe>
+            </div>
+
+          </div>
+
+          <!-- Form Column -->
+          <div class="lg:col-span-7 glass-card rounded-3xl p-8 sm:p-10 border border-brand-gold/25 shadow-card">
+            <h3 class="text-xl font-heading font-bold text-slate-900 mb-1">แบบฟอร์มขอใบเสนอราคา / นัดสำรวจหน้างาน</h3>
+            <p class="text-xs text-slate-500 mb-6 font-sans">กรอกข้อมูลเบื้องต้น ทีมวิศวกร บริษัท เค.วี.เอ็น พลัส จำกัด จะติดต่อกลับภายใน 24 ชั่วโมง</p>
+
+            <form onsubmit="handleFormSubmit(event)" class="space-y-4 font-sans text-xs">
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                  <label class="block font-heading font-semibold text-slate-700 mb-1">ชื่อผู้ติดต่อ / องค์กร <span class="text-red-500">*</span></label>
+                  <input type="text" required placeholder="คุณสมชาย (บริษัท ตัวอย่าง จำกัด)" class="w-full text-xs px-4 py-3 rounded-xl border border-brand-gold/30 bg-white/90 focus:outline-none focus:border-brand-gold focus:ring-1 focus:ring-brand-gold">
+                </div>
+                <div>
+                  <label class="block font-heading font-semibold text-slate-700 mb-1">เบอร์โทรศัพท์ติดต่อ <span class="text-red-500">*</span></label>
+                  <input type="tel" required placeholder="08X-XXX-XXXX" class="w-full text-xs px-4 py-3 rounded-xl border border-brand-gold/30 bg-white/90 focus:outline-none focus:border-brand-gold focus:ring-1 focus:ring-brand-gold">
+                </div>
+              </div>
+
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                  <label class="block font-heading font-semibold text-slate-700 mb-1">อีเมลติดต่อ</label>
+                  <input type="email" placeholder="contact@example.com" class="w-full text-xs px-4 py-3 rounded-xl border border-brand-gold/30 bg-white/90 focus:outline-none focus:border-brand-gold focus:ring-1 focus:ring-brand-gold">
+                </div>
+                <div>
+                  <label class="block font-heading font-semibold text-slate-700 mb-1">ประเภทงานที่ต้องการ <span class="text-red-500">*</span></label>
+                  <select required class="w-full text-xs px-4 py-3 rounded-xl border border-brand-gold/30 bg-white/90 focus:outline-none focus:border-brand-gold focus:ring-1 focus:ring-brand-gold text-slate-700">
+                    <option value="">-- กรุณาเลือกประเภทงาน --</option>
+                    <option value="building">01 งานรับเหมาก่อสร้าง (Construction)</option>
+                    <option value="renovation">02 งานรีโนเวทและปรับปรุง (Renovation)</option>
+                    <option value="interior">03 งานตกแต่งภายใน (Interior Design)</option>
+                    <option value="mep">04 งานระบบวิศวกรรมอาคาร (System MEP)</option>
+                    <option value="landscape">05 งานปรับภูมิทัศน์และสวน (Landscape)</option>
+                    <option value="earthwork">06 งานถมดินและปรับพื้นที่ (Earthwork)</option>
+                  </select>
+                </div>
+              </div>
+
+              <div>
+                <label class="block font-heading font-semibold text-slate-700 mb-1">สถานที่ตั้งโครงการ / ขนาดพื้นที่โดยประมาณ</label>
+                <input type="text" placeholder="เช่น นิคมอุตสาหกรรมบางพลี, พื้นที่ประมาณ 650 ตร.ม." class="w-full text-xs px-4 py-3 rounded-xl border border-brand-gold/30 bg-white/90 focus:outline-none focus:border-brand-gold focus:ring-1 focus:ring-brand-gold">
+              </div>
+
+              <div>
+                <label class="block font-heading font-semibold text-slate-700 mb-1">รายละเอียดโครงการเพิ่มเติม</label>
+                <textarea rows="4" placeholder="ระบุรายละเอียด เช่น มีแบบพร้อมทำ BOQ แล้ว หรือต้องการให้นัดวิศวกรเข้าสำรวจหน้างาน..." class="w-full text-xs px-4 py-3 rounded-xl border border-brand-gold/30 bg-white/90 focus:outline-none focus:border-brand-gold focus:ring-1 focus:ring-brand-gold"></textarea>
+              </div>
+
+              <button type="submit" class="w-full bg-brand-dark hover:bg-brand-gold text-white font-heading font-semibold py-3.5 rounded-full shadow-lg transition-colors duration-300 text-xs">
+                ส่งข้อมูลเพื่อขอรับใบเสนอราคา
+              </button>
+            </form>
+          </div>
+
+        </div>
+
+      </section>
+
+    </main>
+
+    <!-- ================= FLOATING ACTION BUTTONS ================= -->
+    <div class="fixed bottom-6 right-6 z-40 flex flex-col space-y-3">
+      <a href="https://line.me/ti/p/-rOGw3Ouoj" target="_blank" title="แชท LINE กับ เค.วี.เอ็น พลัส" class="w-12 h-12 bg-brand-line hover:bg-emerald-600 text-white rounded-full flex items-center justify-center shadow-xl hover:scale-110 transition duration-200 border-2 border-white">
+        <i class="fa-brands fa-line text-2xl"></i>
+      </a>
+      <a href="tel:0889874539" title="โทรสอบถามด่วน คุณฝน" class="w-12 h-12 bg-brand-dark hover:bg-brand-gold text-brand-goldLight rounded-full flex items-center justify-center shadow-xl hover:scale-110 transition duration-200 border-2 border-white">
+        <i class="fa-solid fa-phone text-xl"></i>
+      </a>
+    </div>
+
+    <!-- ================= ELEGANT FOOTER ================= -->
+    <footer class="bg-brand-dark text-slate-400 text-xs py-10 px-8 lg:px-12 border-t border-brand-gold/30 mt-10">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8 pb-8 border-b border-slate-800">
+        <div class="space-y-3">
+          <div class="font-display font-bold text-xl text-white tracking-widest">
+            KVN<span class="text-brand-gold ml-1">PLUS</span>
+          </div>
+          <p class="text-slate-400 text-xs font-sans leading-relaxed">
+            บริษัท เค.วี.เอ็น พลัส จำกัด ผู้นำบริการ One Stop Construction Solution คิดครบ สร้างจบ ด้วยมาตรฐานวิศวกรรมสากล
+          </p>
+        </div>
+        <div>
+          <h4 class="text-white font-heading font-semibold text-xs uppercase tracking-wider mb-3">ขอบข่ายบริการ</h4>
+          <ul class="space-y-2 font-sans text-xs">
+            <li><button onclick="navTo('services')" class="hover:text-brand-goldLight transition">01 งานก่อสร้าง (Construction)</button></li>
+            <li><button onclick="navTo('services')" class="hover:text-brand-goldLight transition">02 งานรีโนเวท (Renovation)</button></li>
+            <li><button onclick="navTo('services')" class="hover:text-brand-goldLight transition">03 งานตกแต่งภายใน (Interior)</button></li>
+            <li><button onclick="navTo('services')" class="hover:text-brand-goldLight transition">04 งานระบบอาคาร (System MEP)</button></li>
+            <li><button onclick="navTo('services')" class="hover:text-brand-goldLight transition">05 งานภูมิทัศน์ (Landscape)</button></li>
+            <li><button onclick="navTo('services')" class="hover:text-brand-goldLight transition">06 งานถมดิน (Earthwork)</button></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-white font-heading font-semibold text-xs uppercase tracking-wider mb-3">เมนูนำทาง</h4>
+          <ul class="space-y-2 font-sans text-xs">
+            <li><button onclick="navTo('home')" class="hover:text-brand-goldLight transition">หน้าหลัก</button></li>
+            <li><button onclick="navTo('services')" class="hover:text-brand-goldLight transition">บริการของเรา</button></li>
+            <li><button onclick="navTo('projects')" class="hover:text-brand-goldLight transition">ผลงานโครงการ</button></li>
+            <li><button onclick="navTo('about')" class="hover:text-brand-goldLight transition">เกี่ยวกับเรา</button></li>
+            <li><button onclick="navTo('contact')" class="hover:text-brand-goldLight transition">ติดต่อเรา / ขอใบเสนอราคา</button></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-white font-heading font-semibold text-xs uppercase tracking-wider mb-3">ติดต่อสำนักงาน</h4>
+          <p class="text-slate-400 font-sans text-xs leading-relaxed space-y-1">
+            <span>โทร: 02-101-0122, 088-987-4539</span><br>
+            <span>LINE: 0889874539 (คุณฝน)</span><br>
+            <span>Facebook: <a href="https://www.facebook.com/profile.php?id=100054273157568" target="_blank" class="hover:text-brand-goldLight underline">บจ เค วี เอ็น แอ็ดเวอร์ไทซิ่ง</a></span><br>
+            <span>4/5 หมู่ 19 ต.ลำลูกกา อ.ลำลูกกา จ.ปทุมธานี 12150</span>
+          </p>
+        </div>
+      </div>
+
+      <div class="flex flex-col sm:flex-row items-center justify-between text-slate-500 text-[11px] pt-6 gap-3">
+        <div>
+          &copy; 2026 บริษัท เค.วี.เอ็น พลัส จำกัด (KVN PLUS CO., LTD.) All rights reserved.
+        </div>
+        <div class="flex space-x-4">
+          <a href="https://maps.google.com/?q=4/5+หมู่+19+ตำบลลำลูกกา+อำเภอลำลูกกา+จังหวัดปทุมธานี+12150" target="_blank" class="hover:text-brand-goldLight">Google Maps นำทาง</a>
+          <a href="https://line.me/ti/p/-rOGw3Ouoj" target="_blank" class="hover:text-brand-goldLight">LINE Official</a>
+          <a href="https://www.facebook.com/profile.php?id=100054273157568" target="_blank" class="hover:text-brand-goldLight">Facebook</a>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+
+  <!-- ================= MULTI-IMAGE LIGHTBOX MODAL (วางนอก Container เพื่อให้อยู่กึ่งกลางหน้าจอเสมอ) ================= -->
+  <div id="lightbox" class="fixed inset-0 z-[9999] bg-black/85 backdrop-blur-md hidden flex items-center justify-center p-3 sm:p-6" style="margin: 0;" onclick="handleBackdropClick(event)">
+    <div id="lightbox-card" class="relative bg-white rounded-3xl overflow-hidden max-w-4xl w-full shadow-2xl flex flex-col border border-brand-gold/40 max-h-[92vh]" onclick="event.stopPropagation()">
+      
+      <!-- Modal Header -->
+      <div class="px-6 py-4 bg-white border-b border-brand-gold/20 flex items-center justify-between shrink-0">
+        <div>
+          <span id="gallery-badge" class="text-[10px] font-display uppercase tracking-widest text-brand-gold font-bold bg-brand-goldChampagne px-2.5 py-0.5 rounded-full border border-brand-gold/30">PROJECT GALLERY</span>
+          <h3 id="gallery-title" class="text-base sm:text-lg font-heading font-bold text-slate-900 mt-1"></h3>
+        </div>
+        <button onclick="closeLightbox()" class="w-9 h-9 rounded-full bg-slate-100 hover:bg-slate-900 hover:text-white text-slate-700 flex items-center justify-center transition" title="ปิดหน้าต่าง (Esc)">
+          <i class="fa-solid fa-xmark text-sm"></i>
+        </button>
+      </div>
+
+      <!-- Main Image Viewport with Nav Arrows -->
+      <div class="relative bg-[#11141c] flex items-center justify-center min-h-[280px] sm:min-h-[380px] max-h-[52vh] sm:max-h-[58vh] overflow-hidden group select-none">
+        
+        <!-- Left Arrow -->
+        <button id="btn-prev" onclick="prevImage()" class="absolute left-3 z-20 w-11 h-11 rounded-full bg-black/60 hover:bg-brand-gold text-white flex items-center justify-center transition border border-white/20 shadow-lg">
+          <i class="fa-solid fa-chevron-left text-sm"></i>
+        </button>
+
+        <!-- Current Large Image -->
+        <img id="gallery-img" src="" alt="ภาพโครงการ" class="max-w-full max-h-[50vh] sm:max-h-[56vh] w-auto h-auto object-contain mx-auto transition-opacity duration-300 crisp-img">
+
+        <!-- Right Arrow -->
+        <button id="btn-next" onclick="nextImage()" class="absolute right-3 z-20 w-11 h-11 rounded-full bg-black/60 hover:bg-brand-gold text-white flex items-center justify-center transition border border-white/20 shadow-lg">
+          <i class="fa-solid fa-chevron-right text-sm"></i>
+        </button>
+
+        <!-- Current Step Counter Badge -->
+        <div id="counter-badge" class="absolute bottom-3 right-4 z-20 bg-black/75 backdrop-blur-md text-white text-[11px] font-heading font-semibold px-3 py-1 rounded-full border border-brand-gold/40">
+          <span id="current-step">1</span> / <span id="total-steps">4</span>
+        </div>
+      </div>
+
+      <!-- Caption & Thumbnails Strip -->
+      <div class="p-5 bg-white border-t border-brand-gold/15 space-y-3 overflow-y-auto">
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1">
+          <p id="gallery-caption" class="text-xs sm:text-sm font-heading font-semibold text-slate-800"></p>
+          <span id="gallery-desc" class="text-[11px] text-slate-500 font-sans"></span>
+        </div>
+
+        <!-- Thumbnail Navigation Strip -->
+        <div id="thumb-container" class="flex items-center space-x-2.5 overflow-x-auto no-scrollbar pt-1 pb-1">
+          <!-- Rendered dynamically by JS -->
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ================= JAVASCRIPT LOGIC ================= -->
+  <script>
+    // Navigation Routing System
+    function navTo(pageId) {
+      document.querySelectorAll('.page-view').forEach(el => el.classList.remove('active'));
+      const targetPage = document.getElementById('page-' + pageId);
+      if (targetPage) {
+        targetPage.classList.add('active');
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      }
+
+      document.querySelectorAll('.nav-link').forEach(link => {
+        if (link.getAttribute('data-target') === pageId) {
+          link.classList.add('bg-brand-gold', 'text-white', 'shadow-sm');
+          link.classList.remove('text-slate-700');
+        } else {
+          link.classList.remove('bg-brand-gold', 'text-white', 'shadow-sm');
+          link.classList.add('text-slate-700');
+        }
+      });
+    }
+
+    function toggleMobileMenu() {
+      const menu = document.getElementById('mobile-menu');
+      menu.classList.toggle('hidden');
+    }
+
+    // Hero Slider Auto-Play
+    let currentSlide = 0;
+    const slides = document.querySelectorAll('.hero-slide');
+    const dots = document.querySelectorAll('.slide-dot');
+    let slideInterval = setInterval(nextSlide, 5000);
+
+    function updateSlider() {
+      slides.forEach((slide, idx) => {
+        slide.classList.toggle('active', idx === currentSlide);
+      });
+      dots.forEach((dot, idx) => {
+        if (idx === currentSlide) {
+          dot.classList.add('w-8', 'bg-brand-gold');
+          dot.classList.remove('w-2.5', 'bg-white/50');
+        } else {
+          dot.classList.remove('w-8', 'bg-brand-gold');
+          dot.classList.add('w-2.5', 'bg-white/50');
+        }
+      });
+    }
+
+    function nextSlide() {
+      currentSlide = (currentSlide + 1) % slides.length;
+      updateSlider();
+    }
+
+    function setSlide(index) {
+      currentSlide = index;
+      updateSlider();
+      clearInterval(slideInterval);
+      slideInterval = setInterval(nextSlide, 5000);
+    }
+
+    // Projects Filter
+    function filterProjects(category) {
+      document.querySelectorAll('.filter-btn').forEach(btn => {
+        btn.classList.remove('bg-brand-gold', 'text-white');
+        btn.classList.add('bg-white', 'text-slate-700');
+      });
+      if (event && event.target) {
+        event.target.classList.remove('bg-white', 'text-slate-700');
+        event.target.classList.add('bg-brand-gold', 'text-white');
+      }
+
+      const cards = document.querySelectorAll('.project-card');
+      cards.forEach(card => {
+        if (category === 'all' || card.classList.contains(category)) {
+          card.style.display = 'block';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    }
+
+    // ================= MULTI-IMAGE GALLERY DATA STORE =================
+    const galleryDatabase = {
+      // 6 Services
+      'service-1': {
+        title: '01 งานก่อสร้างครบวงจร (Construction)',
+        badge: 'SERVICE 01 • BUILDING',
+        desc: 'งานฐานราก เสาเข็ม โครงสร้าง คสล. และโครงถักเหล็กช่วงกว้าง ควบคุมโดยสามัญวิศวกรโยธา',
+        items: [
+          { src: 'build-1.png', caption: 'งานก่อสร้างครบวงจร ตั้งแต่ฐานราก' },
+          { src: 'build-2.png', caption: 'งานก่อสร้างครบวงจร ตั้งแต่ฐานราก' },
+          { src: 'build-3.png', caption: 'งานก่อสร้างครบวงจร ตั้งแต่ฐานราก' },
+		  { src: 'build-4.png', caption: 'งานก่อสร้างครบวงจร ตั้งแต่ฐานราก' },
+		  { src: 'build-5.png', caption: 'งานก่อสร้างครบวงจร ตั้งแต่ฐานราก' },
+		  { src: 'build-6.png', caption: 'งานก่อสร้างครบวงจร ตั้งแต่ฐานราก' },
+          { src: 'build-7.png', caption: 'งานก่อสร้างครบวงจร ตั้งแต่ฐานราก' }
+        ]
+      },
+      'service-2': {
+        title: '02 งานรีโนเวทและปรับปรุง (Renovation)',
+        badge: 'SERVICE 02 • FAST-TRACK',
+        desc: 'ปรับโฉมพื้นที่เดิม อาคารเก่า และร้านค้าแบรนด์ดัง ส่งมอบตรงเวลา 100%',
+        items: [
+          { src: 're-1.png', caption: 'งานปรับปรุงธนาคารกรุงไทย' },
+          { src: 're-2.png', caption: 'งานปรับปรุงธนาคารกรุงไทย' },
+          { src: 're-3.png', caption: 'งานปรับปรุงธนาคารกรุงไทย' },
+          { src: 're-4.png', caption: 'งานปรับปรุงธนาคารกรุงไทย' },
+          { src: 're-5.png', caption: 'งานปรับปรุงธนาคารกรุงไทย' },
+          { src: 're-6.png', caption: 'งานปรับปรุงธนาคารกรุงไทย' },
+          { src: 're-7.png', caption: 'งานปรับปรุงธนาคารกรุงไทย' },
+          { src: 're-8.png', caption: 'งานปรับปรุงธนาคารกรุงไทย' }
+        ]
+      },
+      'service-3': {
+        title: '03 งานตกแต่งภายในมาตรฐานสากล (Interior Design)',
+        badge: 'SERVICE 03 • INTERIOR',
+        desc: 'หอประชุม โรงละคร โถงต้อนรับ งานอะคูสติกซับเสียง และเฟอร์นิเจอร์สั่งทำพิเศษ',
+        items: [
+          { src: 'fix-1.png', caption: 'งานตกแต่งภายใน มูลนิธิเพื่อนพึ่ง(ภาฯ)ยามยาก' },
+          { src: 'fix-2.png', caption: 'งานตกแต่งภายใน มูลนิธิเพื่อนพึ่ง(ภาฯ)ยามยาก' },
+          { src: 'fix-3.png', caption: 'งานตกแต่งภายใน มูลนิธิเพื่อนพึ่ง(ภาฯ)ยามยาก' },
+          { src: 'fix-4.png', caption: 'งานตกแต่งภายใน มูลนิธิเพื่อนพึ่ง(ภาฯ)ยามยาก' },
+          { src: 'fix-5.png', caption: 'งานตกแต่งภายใน มูลนิธิเพื่อนพึ่ง(ภาฯ)ยามยาก' },
+          { src: 'fix-6.png', caption: 'งานตกแต่งภายใน มูลนิธิเพื่อนพึ่ง(ภาฯ)ยามยาก' },
+          { src: 'fix-7.png', caption: 'งานตกแต่งภายใน มูลนิธิเพื่อนพึ่ง(ภาฯ)ยามยาก' },
+          { src: 'fix-8.png', caption: 'งานตกแต่งภายใน มูลนิธิเพื่อนพึ่ง(ภาฯ)ยามยาก' },
+          { src: 'fix-9.png', caption: 'งานตกแต่งภายใน มูลนิธิเพื่อนพึ่ง(ภาฯ)ยามยาก' }
+        ]
+      },
+      'service-4': {
+        title: '04 งานระบบวิศวกรรมอาคาร (System MEP)',
+        badge: 'SERVICE 04 • MEP SYSTEM',
+        desc: 'ระบบไฟฟ้ากำลัง หม้อแปลง ดับเพลิง และระบบปรับอากาศ HVAC ควบคุมโดยวิศวกรไฟฟ้า กว.',
+        items: [
+          { src: 'sys-1.png', caption: 'งานระบบภายใน ไฟฟ้า ท่อ แอร์' },
+          { src: 'sys-2.png', caption: 'งานระบบภายใน ไฟฟ้า ท่อ แอร์' },
+          { src: 'sys-3.png', caption: 'งานระบบภายใน ไฟฟ้า ท่อ แอร์' },
+          { src: 'sys-4.png', caption: 'งานระบบภายใน ไฟฟ้า ท่อ แอร์' },
+          { src: 'sys-5.png', caption: 'งานระบบภายใน ไฟฟ้า ท่อ แอร์' },
+          { src: 'sys-6.png', caption: 'งานระบบภายใน ไฟฟ้า ท่อ แอร์' },
+          { src: 'sys-7.png', caption: 'งานระบบภายใน ไฟฟ้า ท่อ แอร์' },
+          { src: 'sys-8.png', caption: 'งานระบบภายใน ไฟฟ้า ท่อ แอร์' }
+        ]
+      },
+      'service-5': {
+        title: '05 งานภูมิทัศน์และสวน (Landscape)',
+        badge: 'SERVICE 05 • LANDSCAPE',
+        desc: 'งานตกแต่งพื้นที่ ซุ้มพรรณไม้ ทางเดิน Hardscape และระบบสปริงเกลอร์อัตโนมัติ',
+        items: [
+          { src: 'vi-1.png', caption: 'ก่อนตกแต่ง' },
+          { src: 'vi-2.png', caption: 'หลังตกแต่ง' },
+          { src: 'vi-3.png', caption: 'ก่อนตกแต่ง' },
+          { src: 'vi-4.png', caption: 'หลังตกแต่ง' }
+        ]
+      },
+      'service-6': {
+        title: '06 งานถมดินและปรับสภาพพื้นที่ (Earthwork)',
+        badge: 'SERVICE 06 • EARTHWORK',
+        desc: 'เคลียร์ริ่ง ถมดินลูกรัง หินคลุก บดอัดแน่น และวางท่อระบายน้ำ คสล. ด้วยเครื่องจักรหนัก',
+        items: [
+          { src: 'gr-1.png', caption: 'งานถมดินมืออาชีพ ด้วยเครื่องจักรทันสมัย' },
+          { src: 'gr-2.png', caption: 'งานถมดินมืออาชีพ ด้วยเครื่องจักรทันสมัย' },
+          { src: 'gr-3.png', caption: 'งานถมดินมืออาชีพ ด้วยเครื่องจักรทันสมัย' },
+          { src: 'gr-4.png', caption: 'งานถมดินมืออาชีพ ด้วยเครื่องจักรทันสมัย' },
+          { src: 'gr-5.png', caption: 'งานถมดินมืออาชีพ ด้วยเครื่องจักรทันสมัย' },
+          { src: 'gr-6.png', caption: 'งานถมดินมืออาชีพ ด้วยเครื่องจักรทันสมัย' }
+        ]
+      },
+
+      // Projects
+      'proj-bbq': {
+        title: 'โครงการรีโนเวทร้านอาหาร Bar B Q Plaza',
+        badge: 'RETAIL FIT-OUT',
+        desc: 'ปรับปรุงร้านอาหารระบบ Fast-track ครบทุกระบบตามมาตรฐานแฟรนไชส์',
+        items: [
+          { src: 'bbq-1.png', caption: 'โครงการรีโนเวทร้านอาหาร Bar B Q Plaza' },
+          { src: 'bbq-2.png', caption: 'โครงการรีโนเวทร้านอาหาร Bar B Q Plaza' },
+          { src: 'bbq-3.png', caption: 'โครงการรีโนเวทร้านอาหาร Bar B Q Plaza' },
+          { src: 'bbq-4.png', caption: 'โครงการรีโนเวทร้านอาหาร Bar B Q Plaza' },
+          { src: 'bbq-5.png', caption: 'โครงการรีโนเวทร้านอาหาร Bar B Q Plaza' }
+        ]
+      },
+      'proj-exat-lobby': {
+        title: 'โครงการโถงต้อนรับ การทางพิเศษแห่งประเทศไทย (กทพ.)',
+        badge: 'GOVERNMENT ATRIUM',
+        desc: 'ตกแต่งโถงต้อนรับเพดานสูง Atrium กระจกเปลือย และไฟส่องสว่างระดับพรีเมียม',
+        items: [
+          { src: 'img-11.png', caption: 'โถงเพดานสูง กรุผนังหินเทียม และติดตั้งแชนเดอเลียร์' },
+          { src: 'to-1.png', caption: 'โถงเพดานสูง กรุผนังหินเทียม และติดตั้งแชนเดอเลียร์' },
+          { src: 'to-2.png', caption: 'โถงเพดานสูง กรุผนังหินเทียม และติดตั้งแชนเดอเลียร์' },
+          { src: 'to-3.png', caption: 'โถงเพดานสูง กรุผนังหินเทียม และติดตั้งแชนเดอเลียร์' }
+        ]
+      },
+      'proj-exat-meeting': {
+        title: 'โครงการห้องประชุมใหญ่ และห้องทำงาน การทางพิเศษฯ',
+        badge: 'EXECUTIVE BOARDROOM',
+        desc: 'งานติดตั้งระบบเสียง Acoustic ผนังกันสะท้อนเสียง และโต๊ะประชุมสั่งทำพิเศษ',
+        items: [
+          { src: 'img-1.png', caption: 'โครงการห้องประชุมใหญ่ และห้องทำงาน การทางพิเศษฯ' },
+          { src: 'ro-1.png', caption: 'โครงการห้องประชุมใหญ่ และห้องทำงาน การทางพิเศษฯ' },
+          { src: 'ro-2.png', caption: 'โครงการห้องประชุมใหญ่ และห้องทำงาน การทางพิเศษฯ' }
+        ]
+      },
+      'proj-pafe': {
+        title: 'โครงการมูลนิธิอาสาเพื่อนพึ่ง(ภาฯ)ยามยาก',
+        badge: 'HERITAGE ARCHITECTURE',
+        desc: 'งานตกแต่งภายในด้วยความประณีตสูง ผสานความงามวินเทจและร่วมสมัย',
+        items: [
+          { src: 'pa-1.png', caption: 'โครงการมูลนิธิอาสาเพื่อนพึ่ง(ภาฯ)ยามยาก' },
+          { src: 'pa-2.png', caption: 'โครงการมูลนิธิอาสาเพื่อนพึ่ง(ภาฯ)ยามยาก' },
+          { src: 'pa-3.png', caption: 'โครงการมูลนิธิอาสาเพื่อนพึ่ง(ภาฯ)ยามยาก' },
+          { src: 'pa-4.png', caption: 'โครงการมูลนิธิอาสาเพื่อนพึ่ง(ภาฯ)ยามยาก' },
+          { src: 'pa-5.png', caption: 'โครงการมูลนิธิอาสาเพื่อนพึ่ง(ภาฯ)ยามยาก' },
+          { src: 'pa-6.png', caption: 'โครงการมูลนิธิอาสาเพื่อนพึ่ง(ภาฯ)ยามยาก' }
+        ]
+      },
+      'proj-facade': {
+        title: 'โครงการก่อสร้างโรงงานเครื่องจักรผลิตเส้นมันอบแห้ง',
+        badge: 'FACADE ENGINEERING',
+        desc: 'งานก่อสร้างโรงงานสเกลใหญ่',
+        items: [
+          { src: 'la-1.png', caption: 'โครงการก่อสร้างโรงงานเครื่องจักรผลิตเส้นมันอบแห้ง' },
+          { src: 'la-2.png', caption: 'โครงการก่อสร้างโรงงานเครื่องจักรผลิตเส้นมันอบแห้ง' },
+          { src: 'la-3.png', caption: 'โครงการก่อสร้างโรงงานเครื่องจักรผลิตเส้นมันอบแห้ง' },
+          { src: 'la-4.png', caption: 'โครงการก่อสร้างโรงงานเครื่องจักรผลิตเส้นมันอบแห้ง' },
+          { src: 'la-5.png', caption: 'โครงการก่อสร้างโรงงานเครื่องจักรผลิตเส้นมันอบแห้ง' },
+          { src: 'la-6.png', caption: 'โครงการก่อสร้างโรงงานเครื่องจักรผลิตเส้นมันอบแห้ง' }
+        ]
+      },
+      'proj-landmark': {
+        title: 'โครงการก่อสร้างคริสตจักรมหาชล',
+        badge: 'LANDMARK & BUILDING',
+        desc: 'งานสถาปัตยกรรมอาคารทรงฟรีฟอร์มพร้อมระบบจัดสวนน้ำพุรอบอาคาร',
+        items: [
+          { src: 'img-3.png', caption: 'โครงการก่อสร้างคริสตจักรมหาชล' },
+          { src: 'cr-1.png', caption: 'โครงการก่อสร้างคริสตจักรมหาชล' },
+          { src: 'cr-2.png', caption: 'โครงการก่อสร้างคริสตจักรมหาชล' }
+        ]
+      },
+      'proj-creative': {
+        title: 'โครงการปรับปรุงหน่วยพัฒนาการเด็ก โรงพยาบาลรามาธิบดี',
+        badge: 'CREATIVE SPACE',
+        desc: 'งานติดตั้งผนังอะคริลิกดัดโค้ง แผงไฟเรืองแสง และที่นั่งเบาะหนังบิวท์อิน',
+        items: [
+          { src: 'kid-1.png', caption: 'โครงการปรับปรุงหน่วยพัฒนาการเด็ก โรงพยาบาลรามาธิบดี' },
+          { src: 'kid-2.png', caption: 'โครงการปรับปรุงหน่วยพัฒนาการเด็ก โรงพยาบาลรามาธิบดี' },
+          { src: 'kid-3.png', caption: 'โครงการปรับปรุงหน่วยพัฒนาการเด็ก โรงพยาบาลรามาธิบดี' },
+          { src: 'kid-4.png', caption: 'โครงการปรับปรุงหน่วยพัฒนาการเด็ก โรงพยาบาลรามาธิบดี' }
+        ]
+      }
+    };
+
+    // ================= LIGHTBOX LOGIC =================
+    let currentGalleryList = [];
+    let currentImgIdx = 0;
+
+    function openGallery(key) {
+      const data = galleryDatabase[key];
+      if (!data) return;
+
+      currentGalleryList = data.items;
+      currentImgIdx = 0;
+
+      document.getElementById('gallery-title').innerText = data.title;
+      document.getElementById('gallery-badge').innerText = data.badge;
+      document.getElementById('gallery-desc').innerText = data.desc;
+      document.getElementById('total-steps').innerText = currentGalleryList.length;
+
+      // Render Thumbnails
+      const thumbBox = document.getElementById('thumb-container');
+      thumbBox.innerHTML = '';
+      currentGalleryList.forEach((item, idx) => {
+        const thumbBtn = document.createElement('button');
+        thumbBtn.className = `w-14 h-14 sm:w-16 sm:h-16 rounded-xl overflow-hidden border-2 shrink-0 transition ${idx === 0 ? 'border-brand-gold scale-105' : 'border-transparent opacity-60 hover:opacity-100'}`;
+        thumbBtn.onclick = () => setGalleryImage(idx);
+        thumbBtn.innerHTML = `<img src="${item.src}" class="w-full h-full object-cover crisp-img" onerror="this.src='https://images.unsplash.com/photo-1541888946425-d0fbb186156f?auto=format&fit=crop&w=200&q=80'">`;
+        thumbBox.appendChild(thumbBtn);
+      });
+
+      // Show Nav arrows if multiple images exist
+      const showArrows = currentGalleryList.length > 1;
+      document.getElementById('btn-prev').style.display = showArrows ? 'flex' : 'none';
+      document.getElementById('btn-next').style.display = showArrows ? 'flex' : 'none';
+      document.getElementById('counter-badge').style.display = showArrows ? 'block' : 'none';
+      thumbBox.style.display = showArrows ? 'flex' : 'none';
+
+      updateGalleryView();
+
+      const box = document.getElementById('lightbox');
+      box.classList.remove('hidden');
+      document.body.style.overflow = 'hidden'; // Lock background scroll
+    }
+
+    // Function for single images (License cards, Managing Director photo, etc.)
+    function openSingleImage(src, title, desc) {
+      currentGalleryList = [{ src: src, caption: title }];
+      currentImgIdx = 0;
+
+      document.getElementById('gallery-title').innerText = title;
+      document.getElementById('gallery-badge').innerText = 'VERIFIED DOCUMENT';
+      document.getElementById('gallery-desc').innerText = desc;
+      document.getElementById('gallery-caption').innerText = desc;
+
+      document.getElementById('btn-prev').style.display = 'none';
+      document.getElementById('btn-next').style.display = 'none';
+      document.getElementById('counter-badge').style.display = 'none';
+      document.getElementById('thumb-container').style.display = 'none';
+
+      const imgEl = document.getElementById('gallery-img');
+      imgEl.src = src;
+
+      const box = document.getElementById('lightbox');
+      box.classList.remove('hidden');
+      document.body.style.overflow = 'hidden'; // Lock background scroll
+    }
+
+    function updateGalleryView() {
+      const currentItem = currentGalleryList[currentImgIdx];
+      const imgEl = document.getElementById('gallery-img');
+      
+      imgEl.style.opacity = '0.3';
+      setTimeout(() => {
+        imgEl.src = currentItem.src;
+        imgEl.style.opacity = '1';
+      }, 100);
+
+      document.getElementById('gallery-caption').innerText = currentItem.caption;
+      document.getElementById('current-step').innerText = currentImgIdx + 1;
+
+      // Update thumbnail active states
+      const thumbBtns = document.getElementById('thumb-container').children;
+      for (let i = 0; i < thumbBtns.length; i++) {
+        if (i === currentImgIdx) {
+          thumbBtns[i].className = 'w-14 h-14 sm:w-16 sm:h-16 rounded-xl overflow-hidden border-2 shrink-0 transition border-brand-gold scale-105 shadow-md';
+        } else {
+          thumbBtns[i].className = 'w-14 h-14 sm:w-16 sm:h-16 rounded-xl overflow-hidden border-2 shrink-0 transition border-transparent opacity-60 hover:opacity-100';
+        }
+      }
+    }
+
+    function setGalleryImage(index) {
+      currentImgIdx = index;
+      updateGalleryView();
+    }
+
+    function nextImage() {
+      if (currentGalleryList.length <= 1) return;
+      currentImgIdx = (currentImgIdx + 1) % currentGalleryList.length;
+      updateGalleryView();
+    }
+
+    function prevImage() {
+      if (currentGalleryList.length <= 1) return;
+      currentImgIdx = (currentImgIdx - 1 + currentGalleryList.length) % currentGalleryList.length;
+      updateGalleryView();
+    }
+
+    function closeLightbox() {
+      const box = document.getElementById('lightbox');
+      box.classList.add('hidden');
+      document.body.style.overflow = ''; // Restore page scroll
+    }
+
+    function handleBackdropClick(e) {
+      if (e.target.id === 'lightbox') {
+        closeLightbox();
+      }
+    }
+
+    // Keyboard support for Gallery
+    document.addEventListener('keydown', (e) => {
+      const box = document.getElementById('lightbox');
+      if (!box.classList.contains('hidden')) {
+        if (e.key === 'Escape') closeLightbox();
+        if (e.key === 'ArrowRight') nextImage();
+        if (e.key === 'ArrowLeft') prevImage();
+      }
+    });
+
+    // Form Submission Handler
+    function handleFormSubmit(e) {
+      e.preventDefault();
+      alert('ขอบคุณที่ติดต่อ บริษัท เค.วี.เอ็น พลัส จำกัด เราได้รับข้อมูลโครงการของคุณแล้ว ทีมวิศวกรจะติดต่อกลับโดยเร็วที่สุดครับ');
+      e.target.reset();
+    }
+  </script>
+</body>
+</html>
